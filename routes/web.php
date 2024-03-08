@@ -19,6 +19,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::view('/', 'index');
+Route::view('/index-2', 'index-2');
+Route::view('/index-3', 'index-3');
+Route::view('/index-4', 'index-4');
+
+Route::view('/services', 'services-1');
+Route::view('/services-2', 'services-2');
 
 // Admin Routes
 require __DIR__ . '/adm.php';
