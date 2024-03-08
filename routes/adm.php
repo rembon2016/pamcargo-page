@@ -8,6 +8,8 @@ use App\Http\Controllers\Adm\General\About\ObjectiveController;
 use App\Http\Controllers\Adm\General\About\OurTeamController;
 use App\Http\Controllers\Adm\General\About\OverviewController;
 use App\Http\Controllers\Adm\General\About\VisionController;
+use App\Http\Controllers\Adm\General\Contact\ContentContactController;
+use App\Http\Controllers\Adm\General\Contact\FooterContactController;
 use App\Http\Controllers\Adm\General\EmailCarbonController;
 use App\Http\Controllers\Adm\General\Services\LandAirServiceController;
 use App\Http\Controllers\Adm\General\Services\SeaAirServiceController;
@@ -85,6 +87,27 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
                 ->name('index');
             Route::get('/create', [EmailCarbonController::class, 'create'])
                 ->name('create');
+        });
+
+        // Contacts
+        Route::group(['prefix' => 'contact', 'as' => 'contact.'], function () {
+
+            // Content Contact
+            Route::group(['prefix' => 'content', 'as' => 'content.'], function () {
+                Route::get('/', [ContentContactController::class, 'index'])
+                    ->name('index');
+                Route::get('/create', [ContentContactController::class, 'create'])
+                    ->name('create');
+            });
+
+            // Footer Contact
+            Route::group(['prefix' => 'footer', 'as' => 'footer.'], function () {
+                Route::get('/', [FooterContactController::class, 'index'])
+                    ->name('index');
+                Route::get('/create', [FooterContactController::class, 'create'])
+                    ->name('create');
+            });
+
         });
 
     });

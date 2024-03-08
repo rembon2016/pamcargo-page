@@ -103,4 +103,28 @@
             <span>Email Carbon</span></a>
     </li>
 
+    <!-- Nav Item - Contacts -->
+    <li class="nav-item {{ Utilities::activateIfRouteIs('admin.general.contact.*') }}">
+        <a class="nav-link {{ Utilities::activateIfRouteIs('admin.general.contact.*', 'collapsed', true) }}" href="#" data-toggle="collapse" data-target="#collapseFour"
+            aria-expanded="true" aria-controls="collapseFour">
+            <i class="fas fa-fw fa-hand-holding-heart"></i>
+            <span>Contacts</span>
+        </a>
+        <div id="collapseFour" class="collapse {{ Utilities::activateIfRouteIs('admin.general.contact.*', 'show') }}" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Pamcargo Contact</h6>
+                <a
+                    class="collapse-item {{ Utilities::activateIfRouteIs('admin.general.contact.content.*') }}"
+                    href="{{ route('admin.general.contact.content.index') }}">
+                    Content Contact
+                </a>
+                <a
+                    class="collapse-item {{ Utilities::activateIfRouteIs('admin.general.contact.footer.*') }}"
+                    href="{{ route('admin.general.contact.footer.index') }}">
+                    Footer Contact
+                </a>
+            </div>
+        </div>
+    </li>
+
 </ul>
