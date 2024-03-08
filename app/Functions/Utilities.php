@@ -8,10 +8,11 @@ class Utilities
 {
     /**
      * @param string $path
+     * @param string $action
      * @return string
      */
-    public static function activateIfRouteIs(string $path)
+    public static function activateIfRouteIs(string $path, string $action = 'active'): string
     {
-        return request()->routeIs($path) ? 'active' : '';
+        return request()->routeIs($path) ? $action : '';
     }
 }
