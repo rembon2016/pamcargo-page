@@ -37,7 +37,7 @@
     <li class="nav-item {{ Utilities::activateIfRouteIs('admin.general.about.*') }}">
         <a class="nav-link {{ Utilities::activateIfRouteIs('admin.general.about.*', 'collapsed', true) }}" href="#" data-toggle="collapse" data-target="#collapseTwo"
             aria-expanded="true" aria-controls="collapseTwo">
-            <i class="fas fa-fw fa-cog"></i>
+            <i class="fas fa-fw fa-info"></i>
             <span>About</span>
         </a>
         <div id="collapseTwo" class="collapse {{ Utilities::activateIfRouteIs('admin.general.about.*', 'show') }}" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
@@ -67,6 +67,30 @@
                     class="collapse-item {{ Utilities::activateIfRouteIs('admin.general.about.ourteam.index') }}"
                     href="{{ route('admin.general.about.ourteam.index') }}">
                     Our Team
+                </a>
+            </div>
+        </div>
+    </li>
+
+    <!-- Nav Item - Services -->
+    <li class="nav-item {{ Utilities::activateIfRouteIs('admin.general.service.*') }}">
+        <a class="nav-link {{ Utilities::activateIfRouteIs('admin.general.service.*', 'collapsed', true) }}" href="#" data-toggle="collapse" data-target="#collapseThree"
+            aria-expanded="true" aria-controls="collapseThree">
+            <i class="fas fa-fw fa-hand-holding-heart"></i>
+            <span>Services</span>
+        </a>
+        <div id="collapseThree" class="collapse {{ Utilities::activateIfRouteIs('admin.general.service.*', 'show') }}" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Pamcargo Services</h6>
+                <a
+                    class="collapse-item {{ Utilities::activateIfRouteIs('admin.general.service.sea.index') }}"
+                    href="{{ route('admin.general.service.sea.index') }}">
+                    Sea Air Services
+                </a>
+                <a
+                    class="collapse-item {{ Utilities::activateIfRouteIs('admin.general.service.land.index') }}"
+                    href="{{ route('admin.general.service.land.index') }}">
+                    Land Air Services
                 </a>
             </div>
         </div>
