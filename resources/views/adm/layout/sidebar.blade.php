@@ -12,7 +12,7 @@
     <hr class="sidebar-divider my-0">
 
     <!-- Nav Item - Dashboard -->
-    <li class="nav-item {{ request()->routeIs('admin.index') ? 'active' : '' }}">
+    <li class="nav-item {{ Utilities::activateIfRouteIs('admin.index') }}">
         <a class="nav-link" href="{{ route('admin.index') }}">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span></a>
@@ -23,14 +23,14 @@
 
     <!-- Heading -->
     <div class="sidebar-heading">
-        Master Data
+        General
     </div>
 
     <!-- Nav Item - Article -->
-    <li class="nav-item">
-        <a class="nav-link" href="">
-            <i class="fas fa-newspaper"></i>
-            <span>Artikel</span></a>
+    <li class="nav-item {{ Utilities::activateIfRouteIs('admin.general.slider.*') }}">
+        <a class="nav-link" href="{{ route('admin.general.slider.index') }}">
+            <i class="fas fa-image"></i>
+            <span>Slider</span></a>
     </li>
 
 </ul>
