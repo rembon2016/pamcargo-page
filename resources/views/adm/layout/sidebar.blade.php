@@ -127,4 +127,11 @@
         </div>
     </li>
 
+    <!-- Nav Item - Privacy Policy -->
+    <li class="nav-item {{ Utilities::activateIfRouteIs('admin.general.privacy_policy.*') }}">
+        <a class="nav-link" href="{{ route('admin.general.privacy_policy.index') }}">
+            <i class="fas fa-user-shield"></i>
+            <span>Privacy Policy</span></a>
+    </li>
+
 </ul>
