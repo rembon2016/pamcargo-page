@@ -96,4 +96,11 @@
         </div>
     </li>
 
+    <!-- Nav Item - Email Carbon -->
+    <li class="nav-item {{ Utilities::activateIfRouteIs('admin.general.email_carbon.*') }}">
+        <a class="nav-link" href="{{ route('admin.general.email_carbon.index') }}">
+            <i class="fas fa-envelope"></i>
+            <span>Email Carbon</span></a>
+    </li>
+
 </ul>

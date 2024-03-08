@@ -8,6 +8,7 @@ use App\Http\Controllers\Adm\General\About\ObjectiveController;
 use App\Http\Controllers\Adm\General\About\OurTeamController;
 use App\Http\Controllers\Adm\General\About\OverviewController;
 use App\Http\Controllers\Adm\General\About\VisionController;
+use App\Http\Controllers\Adm\General\EmailCarbonController;
 use App\Http\Controllers\Adm\General\Services\LandAirServiceController;
 use App\Http\Controllers\Adm\General\Services\SeaAirServiceController;
 use App\Http\Controllers\Adm\General\SliderController;
@@ -76,6 +77,14 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
             Route::get('/land-air', [LandAirServiceController::class, 'index'])
                 ->name('land.index');
 
+        });
+
+        // Email Carbon
+        Route::group(['prefix' => 'email-carbon', 'as' => 'email_carbon.'], function () {
+            Route::get('/', [EmailCarbonController::class, 'index'])
+                ->name('index');
+            Route::get('/create', [EmailCarbonController::class, 'create'])
+                ->name('create');
         });
 
     });
