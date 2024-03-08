@@ -9,10 +9,13 @@ class Utilities
     /**
      * @param string $path
      * @param string $action
+     * @param bool $reversed
      * @return string
      */
-    public static function activateIfRouteIs(string $path, string $action = 'active'): string
+    public static function activateIfRouteIs(string $path, string $action = 'active', bool $reversed = false): string
     {
-        return request()->routeIs($path) ? $action : '';
+        return (!$reversed)
+            ? (request()->routeIs($path) ? $action : '')
+            : (request()->routeIs($path) ? '' : $action);
     }
 }

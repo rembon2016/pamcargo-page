@@ -34,8 +34,8 @@
     </li>
 
     <!-- Nav Item - About -->
-    <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+    <li class="nav-item {{ Utilities::activateIfRouteIs('admin.general.about.*') }}">
+        <a class="nav-link {{ Utilities::activateIfRouteIs('admin.general.about.*', 'collapsed', true) }}" href="#" data-toggle="collapse" data-target="#collapseTwo"
             aria-expanded="true" aria-controls="collapseTwo">
             <i class="fas fa-fw fa-cog"></i>
             <span>About</span>
