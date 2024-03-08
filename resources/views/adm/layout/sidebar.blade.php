@@ -107,7 +107,7 @@
     <li class="nav-item {{ Utilities::activateIfRouteIs('admin.general.contact.*') }}">
         <a class="nav-link {{ Utilities::activateIfRouteIs('admin.general.contact.*', 'collapsed', true) }}" href="#" data-toggle="collapse" data-target="#collapseFour"
             aria-expanded="true" aria-controls="collapseFour">
-            <i class="fas fa-fw fa-hand-holding-heart"></i>
+            <i class="fas fa-fw fa-phone"></i>
             <span>Contacts</span>
         </a>
         <div id="collapseFour" class="collapse {{ Utilities::activateIfRouteIs('admin.general.contact.*', 'show') }}" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
