@@ -27,7 +27,7 @@ class SliderController extends Controller
         $actions = [
             'url' => '',
             'method' => '',
-            'act' => '',
+            'act' => 'Submit',
         ];
 
         return view('adm.general.slider.form', [

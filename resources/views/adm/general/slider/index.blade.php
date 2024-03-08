@@ -14,7 +14,7 @@
             <div class="card shadow mb-4">
                 <div class="card-header d-flex justify-content-between align-items-center py-3">
                     <h6 class="m-0 font-weight-bold text-primary">Slider</h6>
-                    <a href="{{ route('admin.general.slider.create') }}" class="btn btn-primary btn-sm">
+                    <a href="{{ route('admin.general.slider.create') }}" class="btn btn-success btn-sm">
                         <i class="fa fa-plus"></i>
                         Add Slider
                     </a>
