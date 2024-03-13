@@ -1477,6 +1477,7 @@
 <script src="@assets('js/swiper-bundle.min.js')"></script><!-- Swiper js -->
 <script src="@assets('js/jquery.bgscroll.js')"></script><!-- BACKGROUND SCROLL -->
 <script src="@assets('js/custom.js')"></script><!-- CUSTOM FUCTIONS  -->
+<script src="@assets('js/main.js')"></script><!-- CUSTOM FUCTIONS  -->
 
 </body>
 
