@@ -69,6 +69,11 @@ This files [Table of contents] are outlined below
 	.container,	.container-lg, .container-md,	.container-sm,	.container-xl {max-width: 1170px;}
 }
 
+// Default Class
+.text-highlight {
+	color: $clr-primary;
+}
+
 /*Title separators*/
 
 .wt-small-separator{  

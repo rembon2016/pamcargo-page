@@ -21,7 +21,7 @@
                                     Something Went Wrong
                                 </h4>
                                 <p>We’re sorry but we can’t seem to find the page you requested. This might be because you have typed the web address incorrectly.</p>
-                                <a href="{{ route('index') }}" class="btn-half site-button"><span>Back To Home</span><em></em></a>
+                                <a href="{{ route('home') }}" class="btn-half site-button"><span>Back To Home</span><em></em></a>
                             </div>
                             <div class="col-lg-6 col-md-12">
                                 <div class="error-media">

@@ -15,36 +15,36 @@
                     
                         <!-- SLIDE 1 -->
                         <li data-index="rs-901" 
-                        data-transition="fade" 
-                        data-slotamount="default" 
-                        data-hideafterloop="0" 
-                        data-hideslideonmobile="off"  
-                        data-easein="default" 
-                        data-easeout="default" 
-                        data-masterspeed="default"  
-                        ddata-thumb="media/images/video4.jpg"
-                        data-rotate="0"  
-                        data-fstransition="fade" 
-                        data-fsmasterspeed="300" 
-                        data-fsslotamount="7" 
-                        data-saveperformance="off"  
-                        data-title="Slide Title" 
-                        data-param1="Additional Text" 
-                        data-param2="" 
-                        data-param3="" 
-                        data-param4="" 
-                        data-param5="" 
-                        data-param6="" 
-                        data-param7="" 
-                        data-param8="" 
-                        data-param9="" 
-                        data-param10="" 
-                        data-description="">
-                            <!-- MAIN IMAGE -->
+                            data-transition="fade" 
+                            data-slotamount="default" 
+                            data-hideafterloop="0" 
+                            data-hideslideonmobile="off"  
+                            data-easein="default" 
+                            data-easeout="default" 
+                            data-masterspeed="default"  
+                            ddata-thumb="@assets('images/banner/main-banner.jpeg')"
+                            data-rotate="0"  
+                            data-fstransition="fade" 
+                            data-fsmasterspeed="300" 
+                            data-fsslotamount="7" 
+                            data-saveperformance="off"  
+                            data-title="Slide Title" 
+                            data-param1="Additional Text" 
+                            data-param2="" 
+                            data-param3="" 
+                            data-param4="" 
+                            data-param5="" 
+                            data-param6="" 
+                            data-param7="" 
+                            data-param8="" 
+                            data-param9="" 
+                            data-param10="" 
+                            data-description="">
+                        <!-- MAIN IMAGE -->
                             
                             
-                            <!-- LAYER NR. 1 [ for overlay ] -->
-                            <div class="tp-caption tp-shape tp-shapewrapper " 
+                        <!-- LAYER NR. 1 [ for overlay ] -->
+                        <div class="tp-caption tp-shape tp-shapewrapper " 
                             id="slide-901-layer-0" 
                             data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
                             data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
@@ -65,8 +65,8 @@
                             data-paddingbottom="[0,0,0,0]"
                             data-paddingleft="[0,0,0,0]"
                             
-                            style="z-index: 1;background-color:rgba(30, 143, 208, 0.4);border-color:rgba(0, 0, 0, 0);border-width:0px;"> 
-                            </div>
+                            style="z-index: 1;background-color:rgba(0, 0, 0, 0.4);border-color:rgba(0, 0, 0, 0);border-width:0px;"> 
+                        </div>
 
                         <!-- LAYER NR. 2 [ for video ] -->
                             <div class="rs-background-video-layer" 
@@ -80,11 +80,11 @@
                             data-aspectratio="16:9" 
                             data-autoplay="true" 
                             data-autoplayonlyfirsttime="false">
-                            </div>                                 
+                        </div>                                 
                     
                         
-                            <!-- LAYER NR. 3 [ for title ] -->
-                            <div class="tp-caption   tp-resizeme" 
+                        <!-- LAYER NR. 3 [ for title ] -->
+                        <div class="tp-caption   tp-resizeme" 
                             id="slide-901-layer-2" 
                             data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
                             data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"  
@@ -110,7 +110,9 @@
                             white-space: normal; 
                             font-weight: 700;
                             color:#fff;
-                            border-width:0px; font-family: 'Rajdhani', sans-serif;"><div class="slider-block-video">Best Transportation in the world</div></div>
+                            border-width:0px; font-family: 'Rajdhani', sans-serif;">
+                                <div class="slider-block-video" style="font-size:42px; line-height: 40px;">We are committed to providing our clients the best <span class="text-highlight">Sea-Air Service</span></div>
+                        </div>
                         
                         </li>
                         
