@@ -41,6 +41,13 @@
     <link rel="stylesheet" href="@assets('css/lc_lightbox.css')" />     
     <!-- Price Range Slider -->
     <link rel="stylesheet" href="@assets('css/bootstrap-slider.min.css')" />
+
+    <!-- REVOLUTION SLIDER CSS -->
+    <link rel="stylesheet" type="text/css" href="@assets('plugins/revolution/revolution/css/settings.css')">
+    <!-- REVOLUTION NAVIGATION STYLE -->
+    <link rel="stylesheet" type="text/css" href="@assets('plugins/revolution/revolution/css/navigation.css')">
+    
+
     
     @stack('head')
 </head>
@@ -92,6 +99,17 @@
 <script src="@assets('js/jquery.bgscroll.js')"></script><!-- BACKGROUND SCROLL -->
 <script src="@assets('js/custom.js')"></script><!-- CUSTOM FUCTIONS  -->
 <script src="@assets('js/main.js')"></script><!-- CUSTOM FUCTIONS  -->
+
+<!-- REVOLUTION JS FILES -->
+
+<script src="@assets('plugins/revolution/revolution/js/jquery.themepunch.tools.min.js')"></script>
+<script src="@assets('plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js')"></script>
+
+<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->	
+<script src="@assets('plugins/revolution/revolution/js/extensions/revolution-plugin.js')"></script>
+
+<!-- REVOLUTION SLIDER SCRIPT FILES -->
+<script src="@assets('js/rev-script-1.js')"></script>
 
 @stack('script')
 
