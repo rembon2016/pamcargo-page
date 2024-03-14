@@ -108,7 +108,7 @@
                     </div>
                     <!-- Card Body -->
                     <div class="card-body">
-                        {{-- <canvas id="visitor-chart" class="w-100"></canvas> --}}
+                        <canvas id="visitor-chart" class="w-100"></canvas>
                     </div>
                 </div>
             </div>
@@ -122,18 +122,22 @@
         integrity="sha512-L0Shl7nXXzIlBSUUPpxrokqq4ojqgZFQczTYlGjzONGTDAcLremjwaWv5A+EDLnxhQzY5xUZPWLOLqYRkY0Cbw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    {{-- <script>
+    <script>
         new Chart(
             document.getElementById('visitor-chart'), {
                 type: 'bar',
                 data: {
-                    labels: data.map(row => row.month),
+                    labels: ['Jan'],
                     datasets: [{
-                        label: 'Grafik Pengunjung Tahunan',
-                        data: data.map(row => row.count)
-                    }]
+                            label: 'Visitors',
+                            fill: false,
+                            data: [20],
+                            backgroundColor: '#50C4ED',
+                            borderColor: '#50C4ED'
+                        }
+                    ]
                 }
             }
         );
-    </script> --}}
+    </script>
 @endpush
