@@ -141,4 +141,11 @@
             <span>Imprint</span></a>
     </li>
 
+    <!-- Nav Item - Widget Quick Access -->
+    <li class="nav-item {{ Utilities::activateIfRouteIs('admin.general.widget.*') }}">
+        <a class="nav-link" href="{{ route('admin.general.widget.index') }}">
+            <i class="fas fa-cog"></i>
+            <span>Widget Quick Access</span></a>
+    </li>
+
 </ul>

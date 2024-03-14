@@ -16,6 +16,7 @@ use App\Http\Controllers\Adm\General\PrivacyPolicyController;
 use App\Http\Controllers\Adm\General\Services\LandAirServiceController;
 use App\Http\Controllers\Adm\General\Services\SeaAirServiceController;
 use App\Http\Controllers\Adm\General\SliderController;
+use App\Http\Controllers\Adm\General\WidgetController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -122,6 +123,14 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
         Route::group(['prefix' => 'imprint', 'as' => 'imprint.'], function () {
             Route::get('/index', [ImprintController::class, 'index'])
                 ->name('index');
+        });
+
+        // Widget Quick Access
+        Route::group(['prefix' => 'widget', 'as' => 'widget.'], function () {
+            Route::get('/index', [WidgetController::class, 'index'])
+                ->name('index');
+            Route::get('/create', [WidgetController::class, 'create'])
+                ->name('create');
         });
 
     });
