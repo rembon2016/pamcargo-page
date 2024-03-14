@@ -148,4 +148,19 @@
             <span>Widget Quick Access</span></a>
     </li>
 
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+
+    <!-- Heading -->
+    <div class="sidebar-heading">
+        User Activities
+    </div>
+
+    <!-- Nav Item - User -->
+    <li class="nav-item {{ Utilities::activateIfRouteIs('admin.ua.user.*') }}">
+        <a class="nav-link" href="{{ route('admin.ua.user.index') }}">
+            <i class="fas fa-users"></i>
+            <span>User</span></a>
+    </li>
+
 </ul>
