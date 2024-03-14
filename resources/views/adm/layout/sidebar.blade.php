@@ -177,4 +177,11 @@
             <span>Office</span></a>
     </li>
 
+    <!-- Nav Item - Agents -->
+    <li class="nav-item {{ Utilities::activateIfRouteIs('admin.ua.agent.*') }}">
+        <a class="nav-link" href="{{ route('admin.ua.agent.index') }}">
+            <i class="fas fa-users"></i>
+            <span>Agents</span></a>
+    </li>
+
 </ul>

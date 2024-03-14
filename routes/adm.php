@@ -17,6 +17,7 @@ use App\Http\Controllers\Adm\General\Services\LandAirServiceController;
 use App\Http\Controllers\Adm\General\Services\SeaAirServiceController;
 use App\Http\Controllers\Adm\General\SliderController;
 use App\Http\Controllers\Adm\General\WidgetController;
+use App\Http\Controllers\Adm\UserActivities\AgentController;
 use App\Http\Controllers\Adm\UserActivities\NewsController;
 use App\Http\Controllers\Adm\UserActivities\OfficeController;
 use App\Http\Controllers\Adm\UserActivities\UserController;
@@ -162,6 +163,14 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
             Route::get('/', [OfficeController::class, 'index'])
                 ->name('index');
             Route::get('/create', [OfficeController::class, 'create'])
+                ->name('create');
+        });
+
+        // Agent
+        Route::group(['prefix' => 'agent', 'as' => 'agent.'], function () {
+            Route::get('/', [AgentController::class, 'index'])
+                ->name('index');
+            Route::get('/create', [AgentController::class, 'create'])
                 ->name('create');
         });
 
