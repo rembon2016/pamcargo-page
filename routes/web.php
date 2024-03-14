@@ -19,7 +19,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::view('/', 'index');
+Route::view('/', 'index-4')->name('home');
 Route::view('/index-2', 'index-2');
 Route::view('/index-3', 'index-3');
 Route::view('/index-4', 'index-4');
