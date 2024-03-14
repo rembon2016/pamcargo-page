@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+use App\Http\Controllers\Adm\Auth\LoginController;
 use App\Http\Controllers\Adm\DashboardController;
 use App\Http\Controllers\Adm\General\About\MissionController;
 use App\Http\Controllers\Adm\General\About\ObjectiveController;
@@ -33,6 +34,8 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
+// Admin
 Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
 
     // Dashboard
@@ -175,5 +178,14 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
         });
 
     });
+
+});
+
+// Auth
+Route::group(['prefix' => 'auth', 'as' => 'auth.'], function () {
+
+    // Login
+    Route::get('/login', [LoginController::class, 'index'])
+        ->name('login');
 
 });
