@@ -163,4 +163,11 @@
             <span>User</span></a>
     </li>
 
+    <!-- Nav Item - News -->
+    <li class="nav-item {{ Utilities::activateIfRouteIs('admin.ua.news.*') }}">
+        <a class="nav-link" href="{{ route('admin.ua.news.index') }}">
+            <i class="fas fa-newspaper"></i>
+            <span>News</span></a>
+    </li>
+
 </ul>
