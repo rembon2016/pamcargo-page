@@ -18,6 +18,7 @@ use App\Http\Controllers\Adm\General\Services\SeaAirServiceController;
 use App\Http\Controllers\Adm\General\SliderController;
 use App\Http\Controllers\Adm\General\WidgetController;
 use App\Http\Controllers\Adm\UserActivities\NewsController;
+use App\Http\Controllers\Adm\UserActivities\OfficeController;
 use App\Http\Controllers\Adm\UserActivities\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -153,6 +154,14 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
             Route::get('/', [NewsController::class, 'index'])
                 ->name('index');
             Route::get('/create', [NewsController::class, 'create'])
+                ->name('create');
+        });
+
+        // Office
+        Route::group(['prefix' => 'office', 'as' => 'office.'], function () {
+            Route::get('/', [OfficeController::class, 'index'])
+                ->name('index');
+            Route::get('/create', [OfficeController::class, 'create'])
                 ->name('create');
         });
 

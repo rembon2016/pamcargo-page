@@ -170,4 +170,11 @@
             <span>News</span></a>
     </li>
 
+    <!-- Nav Item - Office -->
+    <li class="nav-item {{ Utilities::activateIfRouteIs('admin.ua.office.*') }}">
+        <a class="nav-link" href="{{ route('admin.ua.office.index') }}">
+            <i class="fas fa-building"></i>
+            <span>Office</span></a>
+    </li>
+
 </ul>
