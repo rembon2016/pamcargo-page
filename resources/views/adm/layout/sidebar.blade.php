@@ -134,4 +134,11 @@
             <span>Privacy Policy</span></a>
     </li>
 
+    <!-- Nav Item - Imprint -->
+    <li class="nav-item {{ Utilities::activateIfRouteIs('admin.general.imprint.*') }}">
+        <a class="nav-link" href="{{ route('admin.general.imprint.index') }}">
+            <i class="fas fa-wrench"></i>
+            <span>Imprint</span></a>
+    </li>
+
 </ul>

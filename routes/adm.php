@@ -11,6 +11,7 @@ use App\Http\Controllers\Adm\General\About\VisionController;
 use App\Http\Controllers\Adm\General\Contact\ContentContactController;
 use App\Http\Controllers\Adm\General\Contact\FooterContactController;
 use App\Http\Controllers\Adm\General\EmailCarbonController;
+use App\Http\Controllers\Adm\General\ImprintController;
 use App\Http\Controllers\Adm\General\PrivacyPolicyController;
 use App\Http\Controllers\Adm\General\Services\LandAirServiceController;
 use App\Http\Controllers\Adm\General\Services\SeaAirServiceController;
@@ -114,6 +115,12 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
         // Privacy Policy
         Route::group(['prefix' => 'privacy-policy', 'as' => 'privacy_policy.'], function () {
             Route::get('/index', [PrivacyPolicyController::class, 'index'])
+                ->name('index');
+        });
+
+        // Imprint
+        Route::group(['prefix' => 'imprint', 'as' => 'imprint.'], function () {
+            Route::get('/index', [ImprintController::class, 'index'])
                 ->name('index');
         });
 
