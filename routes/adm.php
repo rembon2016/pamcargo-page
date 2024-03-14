@@ -18,6 +18,8 @@ use App\Http\Controllers\Adm\General\Services\LandAirServiceController;
 use App\Http\Controllers\Adm\General\Services\SeaAirServiceController;
 use App\Http\Controllers\Adm\General\SliderController;
 use App\Http\Controllers\Adm\General\WidgetController;
+use App\Http\Controllers\Adm\Monitoring\SystemLogController;
+use App\Http\Controllers\Adm\Monitoring\VisitorLogController;
 use App\Http\Controllers\Adm\UserActivities\AgentController;
 use App\Http\Controllers\Adm\UserActivities\NewsController;
 use App\Http\Controllers\Adm\UserActivities\OfficeController;
@@ -41,6 +43,23 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
     // Dashboard
     Route::get('/', [DashboardController::class, 'index'])
         ->name('index');
+
+    // Monitoring
+    Route::group(['prefix' => 'monitoring', 'as' => 'monitoring.'], function () {
+
+        // Visitor Log
+        Route::group(['prefix' => 'visitor', 'as' => 'visitor.'], function () {
+            Route::get('/', [VisitorLogController::class, 'index'])
+                ->name('index');
+        });
+
+        // System Log
+        Route::group(['prefix' => 'system', 'as' => 'system.'], function () {
+            Route::get('/', [SystemLogController::class, 'index'])
+                ->name('index');
+        });
+
+    });
 
     // General
     Route::group(['prefix' => 'general', 'as' => 'general.'], function () {

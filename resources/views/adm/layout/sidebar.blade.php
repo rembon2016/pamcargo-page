@@ -23,6 +23,28 @@
 
     <!-- Heading -->
     <div class="sidebar-heading">
+        Monitoring
+    </div>
+
+    <!-- Nav Item - Visitor Log -->
+    <li class="nav-item {{ Utilities::activateIfRouteIs('admin.monitoring.visitor.*') }}">
+        <a class="nav-link" href="{{ route('admin.monitoring.visitor.index') }}">
+            <i class="fas fa-user"></i>
+            <span>Visitor Log</span></a>
+    </li>
+
+    <!-- Nav Item - System Log -->
+    <li class="nav-item {{ Utilities::activateIfRouteIs('admin.monitoring.system.*') }}">
+        <a class="nav-link" href="{{ route('admin.monitoring.system.index') }}">
+            <i class="fas fa-desktop"></i>
+            <span>System Log</span></a>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+
+    <!-- Heading -->
+    <div class="sidebar-heading">
         General
     </div>
 
