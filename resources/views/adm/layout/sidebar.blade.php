@@ -206,4 +206,11 @@
             <span>Agents</span></a>
     </li>
 
+    <!-- Nav Item - Rate Request -->
+    <li class="nav-item {{ Utilities::activateIfRouteIs('admin.ua.rate_request.*') }}">
+        <a class="nav-link" href="{{ route('admin.ua.rate_request.index') }}">
+            <i class="fas fa-envelope"></i>
+            <span>Rate Request</span></a>
+    </li>
+
 </ul>

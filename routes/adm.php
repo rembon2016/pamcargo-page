@@ -23,6 +23,7 @@ use App\Http\Controllers\Adm\Monitoring\VisitorLogController;
 use App\Http\Controllers\Adm\UserActivities\AgentController;
 use App\Http\Controllers\Adm\UserActivities\NewsController;
 use App\Http\Controllers\Adm\UserActivities\OfficeController;
+use App\Http\Controllers\Adm\UserActivities\RateRequestController;
 use App\Http\Controllers\Adm\UserActivities\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -194,6 +195,12 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
                 ->name('index');
             Route::get('/create', [AgentController::class, 'create'])
                 ->name('create');
+        });
+
+        // Rate Request
+        Route::group(['prefix' => 'rate-request', 'as' => 'rate_request.'], function () {
+            Route::get('/', [RateRequestController::class, 'index'])
+                ->name('index');
         });
 
     });
