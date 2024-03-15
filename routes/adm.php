@@ -21,6 +21,7 @@ use App\Http\Controllers\Adm\General\WidgetController;
 use App\Http\Controllers\Adm\Monitoring\SystemLogController;
 use App\Http\Controllers\Adm\Monitoring\VisitorLogController;
 use App\Http\Controllers\Adm\UserActivities\AgentController;
+use App\Http\Controllers\Adm\UserActivities\ContinentController;
 use App\Http\Controllers\Adm\UserActivities\NewsController;
 use App\Http\Controllers\Adm\UserActivities\OfficeController;
 use App\Http\Controllers\Adm\UserActivities\RateRequestController;
@@ -201,6 +202,14 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
         Route::group(['prefix' => 'rate-request', 'as' => 'rate_request.'], function () {
             Route::get('/', [RateRequestController::class, 'index'])
                 ->name('index');
+        });
+
+        // Continent
+        Route::group(['prefix' => 'continent', 'as' => 'continent.'], function () {
+            Route::get('/', [ContinentController::class, 'index'])
+                ->name('index');
+            Route::get('/create', [ContinentController::class, 'create'])
+                ->name('create');
         });
 
     });

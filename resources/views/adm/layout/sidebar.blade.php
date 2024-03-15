@@ -213,4 +213,11 @@
             <span>Rate Request</span></a>
     </li>
 
+    <!-- Nav Item - Continent -->
+    <li class="nav-item {{ Utilities::activateIfRouteIs('admin.ua.continent.*') }}">
+        <a class="nav-link" href="{{ route('admin.ua.continent.index') }}">
+            <i class="fas fa-globe"></i>
+            <span>Continent</span></a>
+    </li>
+
 </ul>
