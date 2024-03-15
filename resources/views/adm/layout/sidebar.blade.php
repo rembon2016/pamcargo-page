@@ -220,4 +220,11 @@
             <span>Continent</span></a>
     </li>
 
+    <!-- Nav Item - Customer Message -->
+    <li class="nav-item {{ Utilities::activateIfRouteIs('admin.ua.customer_message.*') }}">
+        <a class="nav-link" href="{{ route('admin.ua.customer_message.index') }}">
+            <i class="fas fa-envelope"></i>
+            <span>Customer Message</span></a>
+    </li>
+
 </ul>

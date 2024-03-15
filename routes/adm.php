@@ -22,6 +22,7 @@ use App\Http\Controllers\Adm\Monitoring\SystemLogController;
 use App\Http\Controllers\Adm\Monitoring\VisitorLogController;
 use App\Http\Controllers\Adm\UserActivities\AgentController;
 use App\Http\Controllers\Adm\UserActivities\ContinentController;
+use App\Http\Controllers\Adm\UserActivities\CustomerMessageController;
 use App\Http\Controllers\Adm\UserActivities\NewsController;
 use App\Http\Controllers\Adm\UserActivities\OfficeController;
 use App\Http\Controllers\Adm\UserActivities\RateRequestController;
@@ -210,6 +211,12 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
                 ->name('index');
             Route::get('/create', [ContinentController::class, 'create'])
                 ->name('create');
+        });
+
+        // Continent
+        Route::group(['prefix' => 'customer-message', 'as' => 'customer_message.'], function () {
+            Route::get('/', [CustomerMessageController::class, 'index'])
+                ->name('index');
         });
 
     });
