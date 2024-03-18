@@ -8,7 +8,7 @@
         
                 <div class="logo-header">
                     <div class="logo-header-inner logo-header-one">
-                        <a href="index.html">
+                        <a href="{{ route('home') }}">
                             <img src="@assets('images/logo/pamcargo-logo.png')" alt="Pamcargo Logo">
                         </a>
                     </div>

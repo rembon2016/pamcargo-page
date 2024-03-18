@@ -72,6 +72,8 @@ This files [Table of contents] are outlined below
 // Default Class
 .text-highlight {
 	color: $clr-primary;
+	padding-bottom: 2.5px;
+	border-bottom: 2px groove $clr-white;
 }
 
 /*Title separators*/

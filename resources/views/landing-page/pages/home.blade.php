@@ -127,168 +127,6 @@
         </div>
         <!-- SLIDER END -->
 
-        <!-- SERVICES SECTION START -->
-        {{-- <div class="section-full p-t120 p-b90 site-bg-gray tw-service-gallery-style1-area tyre-mark-bg">
-        
-            <div class="services-gallery-block-outer2">
-                <div class="container">
-
-                    <!-- TITLE START-->
-                    <div class="section-head center wt-small-separator-outer">
-                        <div class="wt-small-separator site-text-primary">
-                            <div>All services</div>                                
-                        </div>
-                        <h2 class="wt-title">Trusted For Our Services</h2>
-                        <p class="section-head-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry the standard dummy text ever since the  when an printer took.</p>
-                    </div>                  
-                    <!-- TITLE END-->
-
-                    <div class="section-content"> 
-                        <div class="services-gallery-style1">
-                            <div class="owl-carousel services-gallery-one owl-btn-bottom-center ">
-                            
-                                <!-- COLUMNS 1 --> 
-                                <div class="item ">
-                                    <div class="service-box-style1">
-                                        <div class="service-content">
-                                            <div class="service-content-inner">
-                                                <div class="service-content-top"> 
-                                                    <h3 class="service-title-large"><a href="services-detail.html">Air Freight</a></h3>
-                                                </div>
-                                                <div class="service-content-bottom">
-                                                    <span class="service-title-large-number">01</span>
-                                                    <p>Our aim is to optimize and improve your supply chain so that we can give you the best service.</p>
-                                                    <a href="services-detail.html" class="site-button-2">View Detail</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="service-media">
-                                            <img src="images/s-gallery/1.jpg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- COLUMNS 2 --> 
-                                <div class="item ">
-                                    <div class="service-box-style1">
-                                        <div class="service-content">
-                                            <div class="service-content-inner">
-                                                <div class="service-content-top"> 
-                                                    <h3 class="service-title-large"><a href="services-detail.html">Road Freight</a></h3>
-                                                </div>
-                                                <div class="service-content-bottom">
-                                                    <span class="service-title-large-number">02</span>
-                                                    <p>Our aim is to optimize and improve your supply chain so that we can give you the best service.</p>
-                                                    <a href="services-detail.html" class="site-button-2">View Detail</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="service-media">
-                                            <img src="images/s-gallery/2.jpg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <!-- COLUMNS 3 --> 
-                                <div class="item ">
-                                    <div class="service-box-style1">
-                                        <div class="service-content">
-                                            <div class="service-content-inner">
-                                                <div class="service-content-top"> 
-                                                    <h3 class="service-title-large"><a href="services-detail.html">Ocean Freight</a></h3>
-                                                </div>
-                                                <div class="service-content-bottom">
-                                                    <span class="service-title-large-number">03</span>
-                                                    <p>Our aim is to optimize and improve your supply chain so that we can give you the best service.</p>
-                                                    <a href="services-detail.html" class="site-button-2">View Detail</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="service-media">
-                                            <img src="images/s-gallery/3.jpg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <!-- COLUMNS 4 --> 
-                                <div class="item ">
-                                    <div class="service-box-style1">
-                                        <div class="service-content">
-                                            <div class="service-content-inner">
-                                                <div class="service-content-top"> 
-                                                    <h3 class="service-title-large"><a href="services-detail.html">Rail Freight</a></h3>
-                                                </div>
-                                                <div class="service-content-bottom">
-                                                    <span class="service-title-large-number">04</span>
-                                                    <p>Our aim is to optimize and improve your supply chain so that we can give you the best service.</p>
-                                                    <a href="services-detail.html" class="site-button-2">View Detail</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="service-media">
-                                            <img src="images/s-gallery/4.jpg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <!-- COLUMNS 5 --> 
-                                <div class="item ">
-                                    <div class="service-box-style1">
-                                        <div class="service-content">
-                                            <div class="service-content-inner">
-                                                <div class="service-content-top"> 
-                                                    <h3 class="service-title-large"><a href="services-detail.html">Warehousing</a></h3>
-                                                </div>
-                                                <div class="service-content-bottom">
-                                                    <span class="service-title-large-number">05</span>
-                                                    <p>Our aim is to optimize and improve your supply chain so that we can give you the best service.</p>
-                                                    <a href="services-detail.html" class="site-button-2">View Detail</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="service-media">
-                                            <img src="images/s-gallery/5.jpg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <!-- COLUMNS 6 --> 
-                                <div class="item ">
-                                    <div class="service-box-style1">
-                                        <div class="service-content">
-                                            <div class="service-content-inner">
-                                                <div class="service-content-top"> 
-                                                    <h3 class="service-title-large"><a href="services-detail.html">Project Cargo</a></h3>
-                                                </div>
-                                                <div class="service-content-bottom">
-                                                    <span class="service-title-large-number">06</span>
-                                                    <p>Our aim is to optimize and improve your supply chain so that we can give you the best service.</p>
-                                                    <a href="services-detail.html" class="site-button-2">View Detail</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="service-media">
-                                            <img src="images/s-gallery/6.jpg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                        
-                        
-                            </div>
-                        </div>
-                    </div>                              
-                </div>
-            </div>
-
-            <div class="tw-hilite-text-wrap">
-                <div class="tw-hilite-text right">
-                    <span>Services</span>
-                </div>
-            </div>
-            
-        </div> --}}
-        <!-- SERVICES SECTION END -->
-
         <!-- WHY CHOOSE US SECTION START -->
         <div class="section-full p-t120 p-b90 site-bg-gray-light tw-why-choose-area2">
             <div class="tw-why-choose-area-top2">        
@@ -320,39 +158,35 @@
                                     <!-- TITLE START-->
                                     <div class="section-head left wt-small-separator-outer">
                                         <div class="wt-small-separator site-text-primary">
-                                        <div>Why Choose Us</div>                                
+                                            <div>Why Choose Us</div>                                
                                         </div>
-                                        <h2 class="wt-title">We Are Professional Logistics & cargo Agency</h2>
+                                        <h2 class="wt-title">Transport Solutions of The Future</h2>
                                     </div>                  
                                     <!-- TITLE END-->
-                                    <strong>Sed ut perspiciatis unde omnis iste natus error volup tatem accusantium dolorem que laudantium, totam inventore.</strong>
+
+                                    <strong>Unstable supply chains push companies around the globe to their limits every day - especially on the trade routes from Asia to Europe, Africa and North America. In volatile market situations, adaptable action is essential.</strong>
+                                    <strong>Successful companies opt for alternative, highly flexible freight solutions, such as the PAM CARGO Sea-Air service to reduce their costs, keep their delivery promise, and improve their carbon footprint.</strong>
                                     
                                     <ul class="description-list">
                                         <li>
                                             <i class="fa fa-angle-right"></i>
-                                            Go beyond logistics, make the world go round and revolutionize business.
+                                            Perfect combination of Cost-Efficient Sea Freight and Fast Air Freight
                                         </li>
                                         <li>
                                             <i class="fa fa-angle-right"></i>
-                                            Logistics through innovation, dedication, and technology. ready, set, done.
+                                            Agile, Cost-Efficient, and Green
                                         </li>
                                         <li>
                                             <i class="fa fa-angle-right"></i>
-                                            We take pride in serving our customers safely. together with passion.
+                                            Save costs compared to Air Freight
                                         </li>
                                         <li>
                                             <i class="fa fa-angle-right"></i>
-                                            Imagination what we can easily see is only a small percentage.
+                                            Save time compared to Sea Freight
                                         </li>
                                         <li>
                                             <i class="fa fa-angle-right"></i>
-                                            Quality never goes out of style. safety, quality, professionalism.
-                                        </li>
-                                        
-                                        
-                                        <li>
-                                            <i class="fa fa-angle-right"></i>
-                                            The quality shows in every move we make where business lives.
+                                            Save CO<sup>2</sup> emissions in the mix of sea and airfreight
                                         </li>
                                     </ul>
                                     <div class="tw-why-choose-left-bottom">

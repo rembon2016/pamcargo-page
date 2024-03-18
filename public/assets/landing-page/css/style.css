@@ -3151,6 +3151,8 @@ ol li {
 }
 .text-highlight {
   color: #54a021;
+  padding-bottom: 2.5px;
+  border-bottom: 2px groove #fff;
 }
 
 /*Title separators*/
