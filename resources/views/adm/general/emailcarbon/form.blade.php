@@ -30,6 +30,7 @@
                                 class="form-control @error('email') is-invalid @enderror"
                                 name="email"
                                 id="email"
+                                value="{{ old('email', @$emailCarbon->email) }}"
                                 required
                             >
                             @error('email')

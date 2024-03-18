@@ -144,6 +144,14 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['auth']], 
                 ->name('index');
             Route::get('/create', [EmailCarbonController::class, 'create'])
                 ->name('create');
+            Route::post('/store', [EmailCarbonController::class, 'store'])
+                ->name('store');
+            Route::get('/{id}/edit', [EmailCarbonController::class, 'edit'])
+                ->name('edit');
+            Route::put('/{id}/update', [EmailCarbonController::class, 'update'])
+                ->name('update');
+            Route::delete('/{id}/delete', [EmailCarbonController::class, 'delete'])
+                ->name('delete');
         });
 
         // Contacts
