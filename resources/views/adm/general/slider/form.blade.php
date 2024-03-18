@@ -30,6 +30,7 @@
                                 class="form-control @error('title') is-invalid @enderror"
                                 name="title"
                                 id="title"
+                                value="{{ old('title', @$slider->title) }}"
                                 required
                             >
                             @error('title')
@@ -41,7 +42,7 @@
 
                         <div class="form-group">
                             <label for="description">Description</label>
-                            <textarea rows="10" class="form-control summernotes" data-placeholder="" name="description">{{ old('description') }}</textarea>
+                            <textarea rows="10" class="form-control summernotes" data-placeholder="" name="description">{{ old('description', @$slider->description) }}</textarea>
                             @error('description')
                                 <div class="invalid-feedback">
                                     {{ $errors->first('description') }}
@@ -50,16 +51,16 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="slider_image">Slider Image <sup class="text-danger">*</sup></label>
+                            <label for="image_file">Slider Image @if(!@$slider)<sup class="text-danger">*</sup>@endif </label>
                             <input
                                 type="file"
-                                class="form-control @error('slider_image') is-invalid @enderror"
-                                name="slider_image"
-                                id="slider_image"
+                                class="form-control @error('image_file') is-invalid @enderror"
+                                name="image_file"
+                                id="image_file"
                             >
-                            @error('slider_image')
+                            @error('image_file')
                                 <div class="invalid-feedback">
-                                    {{ $errors->first('slider_image') }}
+                                    {{ $errors->first('image_file') }}
                                 </div>
                             @enderror
                         </div>

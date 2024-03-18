@@ -73,6 +73,16 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
                 ->name('index');
             Route::get('/create', [SliderController::class, 'create'])
                 ->name('create');
+            Route::post('/store', [SliderController::class, 'store'])
+                ->name('store');
+            Route::get('/{id}/edit', [SliderController::class, 'edit'])
+                ->name('edit');
+            Route::put('/{id}/update', [SliderController::class, 'update'])
+                ->name('update');
+            Route::get('/{id}/set-status', [SliderController::class, 'setUsageStatus'])
+                ->name('set_usage_status');
+            Route::delete('/{id}/delete', [SliderController::class, 'delete'])
+                ->name('delete');
         });
 
         // About

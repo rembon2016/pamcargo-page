@@ -25,26 +25,75 @@
                             <thead>
                                 <tr>
                                     <th>#</th>
-                                    <th>Col 1</th>
-                                    <th>Col 2</th>
+                                    <th>Title</th>
+                                    <th>Description</th>
+                                    <th>Image</th>
                                     <th>Actions?</th>
                                 </tr>
                             </thead>
                             <tfoot>
                                 <tr>
                                     <th>#</th>
-                                    <th>Col 1</th>
-                                    <th>Col 2</th>
+                                    <th>Title</th>
+                                    <th>Description</th>
+                                    <th>Image</th>
                                     <th>Actions?</th>
                                 </tr>
                             </tfoot>
                             <tbody>
-                                <tr>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                </tr>
+                                @foreach ($sliders as $slider)
+                                    <tr>
+                                        <td>{{ $loop->iteration }}</td>
+                                        <td>{{ $slider->title }}</td>
+                                        <td>{!! Utilities::decodeHtmlEntity($slider->description) !!}</td>
+                                        <td>
+                                            <!-- Button trigger Image -->
+                                            <button type="button" class="btn btn-primary btn-sm" data-toggle="modal"
+                                                data-target="#sliderImage{{$loop->index}}">
+                                                View Image
+                                            </button>
+
+                                            <!-- Show Detail Image -->
+                                            <div class="modal fade" id="sliderImage{{$loop->index}}" tabindex="-1"
+                                                aria-labelledby="sliderImageLabel{{$loop->index}}" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="sliderImageLabel{{$loop->index}}">{{ $slider->title }}</h5>
+                                                            <button type="button" class="close" data-dismiss="modal"
+                                                                aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <img src="{{ $slider->image_url }}" class="img-thumbnail"
+                                                                alt="{{ $slider->title }}" style="width: 100%; height: 300px;" />
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary"
+                                                                data-dismiss="modal">Close</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            @if ($slider->is_active)
+                                                <a href="{{ route('admin.general.slider.set_usage_status', ['id' => $slider->id, 's' => 'inactive']) }}" class="btn btn-primary btn-sm">
+                                                    <i class="fa fa-check"></i>
+                                                </a>
+                                            @else
+                                                <a href="{{ route('admin.general.slider.set_usage_status', ['id' => $slider->id, 's' => 'active']) }}" class="btn btn-warning btn-sm">
+                                                    <i class="fa fa-times"></i>
+                                                </a>
+                                            @endif
+                                            <a href="{{ route('admin.general.slider.edit', $slider->id) }}" class="btn btn-success btn-sm">
+                                                <i class="fa fa-edit"></i>
+                                            </a>
+                                            <x-delete-btn :url="route('admin.general.slider.delete', $slider->id)" />
+                                        </td>
+                                    </tr>
+                                @endforeach
                             </tbody>
                         </table>
                     </div>
