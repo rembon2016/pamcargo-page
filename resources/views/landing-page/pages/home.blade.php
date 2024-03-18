@@ -128,7 +128,7 @@
         <!-- SLIDER END -->
 
         <!-- SERVICES SECTION START -->
-        <div class="section-full p-t120 p-b90 site-bg-gray tw-service-gallery-style1-area tyre-mark-bg">
+        {{-- <div class="section-full p-t120 p-b90 site-bg-gray tw-service-gallery-style1-area tyre-mark-bg">
         
             <div class="services-gallery-block-outer2">
                 <div class="container">
@@ -286,95 +286,11 @@
                 </div>
             </div>
             
-        </div>
+        </div> --}}
         <!-- SERVICES SECTION END -->
 
-        <!-- CLIENT LOGO SECTION START -->
-        <div class="section-full p-t90 p-b90 site-bg-white tw-client-logo2-area">
-            <div class="container home-client2-outer">
-                <div class="section-content">
-
-                    <div class="owl-carousel home-client-carousel2 owl-btn-vertical-center">
-                    
-                        <div class="item">
-                            <div class="ow-client-logo">
-                                <div class="client-logo client-logo-media">
-                                <a href="about-1.html"><img src="images/client-logo/w1.png" alt=""></a></div>
-                            </div>
-                        </div>
-                        
-                        <div class="item">
-                            <div class="ow-client-logo">
-                                <div class="client-logo client-logo-media">
-                                <a href="about-1.html"><img src="images/client-logo/w2.png" alt=""></a></div>
-                            </div>
-                        </div>
-                        
-                        <div class="item">
-                            <div class="ow-client-logo">
-                                <div class="client-logo client-logo-media">
-                                <a href="about-1.html"><img src="images/client-logo/w3.png" alt=""></a></div>
-                            </div>
-                        </div>
-                        
-                        <div class="item">
-                            <div class="ow-client-logo">
-                                <div class="client-logo client-logo-media">
-                                <a href="about-1.html"><img src="images/client-logo/w4.png" alt=""></a></div>
-                            </div>
-                        </div>
-                        
-                        <div class="item">
-                            <div class="ow-client-logo">
-                                <div class="client-logo client-logo-media">
-                                <a href="about-1.html"><img src="images/client-logo/w5.png" alt=""></a></div>
-                            </div>
-                        </div>
-                        
-                        <div class="item">
-                            <div class="ow-client-logo">
-                                <div class="client-logo client-logo-media">
-                                <a href="about-1.html"><img src="images/client-logo/w1.png" alt=""></a></div>
-                            </div>
-                        </div>
-                        
-                        <div class="item">
-                            <div class="ow-client-logo">
-                                <div class="client-logo client-logo-media">
-                                <a href="about-1.html"><img src="images/client-logo/w2.png" alt=""></a></div>
-                            </div>
-                        </div>
-                        
-                        <div class="item">
-                            <div class="ow-client-logo">
-                                <div class="client-logo client-logo-media">
-                                <a href="about-1.html"><img src="images/client-logo/w3.png" alt=""></a></div>
-                            </div>
-                        </div>
-                        
-                        <div class="item">
-                            <div class="ow-client-logo">
-                                <div class="client-logo client-logo-media">
-                                <a href="about-1.html"><img src="images/client-logo/w4.png" alt=""></a></div>
-                            </div>
-                        </div>
-                        
-                        <div class="item">
-                            <div class="ow-client-logo">
-                                <div class="client-logo client-logo-media">
-                                <a href="about-1.html"><img src="images/client-logo/w5.png" alt=""></a></div>
-                            </div>
-                        </div>
-                        
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <!-- CLIENT LOGO  SECTION End --> 
-
         <!-- WHY CHOOSE US SECTION START -->
-        <div class="section-full p-t120 p-b90 site-bg-white tw-why-choose-area2" style="background-image:url(images/background/bg-6.jpg);">
+        <div class="section-full p-t120 p-b90 site-bg-gray-light tw-why-choose-area2">
             <div class="tw-why-choose-area-top2">        
                 <div class="container">
 
@@ -386,7 +302,7 @@
                                 <div class="tw-why-choose-right">
                                     <div class="tw-why-choose-media1 shine-effect">
                                         <div class="shine-box">
-                                            <img src="images/abt-1.jpg" alt="" >
+                                            <img src="@assets('images/abt-1.jpg')" alt="" >
                                         </div>
                                     </div>
                                     <div class="tw-why-choose-tag slide-top shine-effect">
@@ -454,78 +370,145 @@
         </div>   
         <!-- WHY CHOOSE US SECTION END -->
 
-        <!-- Estimation SECTION START -->
-        <div class="section-full p-t120 site-bg-white  tw-estimation-area">
-                    
-            <div class="container">
+        <!-- CLIENT LOGO SECTION START -->
+        <div class="section-full p-t90 p-b90 site-bg-white tw-client-logo2-area">
+            <div class="container home-client2-outer">
+                <div class="section-content">
 
-                <div class="wt-separator-two-part">
-                    <div class="row wt-separator-two-part-row">
-                        <div class="col-xl-6 col-lg-6 col-md-12 wt-separator-two-part-left">
-                            <!-- TITLE START-->
-                            <div class="section-head left wt-small-separator-outer">
-                                <div class="wt-small-separator site-text-primary">
-                                <div>Estimation</div>                                
-                                </div>
-                                <h2 class="wt-title">Has a wide range of solutions</h2>
-                                <p class="section-head-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry the standard dummy text ever since the  when an printer took.</p>
-                            </div>                  
-                            <!-- TITLE END-->
+                    <div class="owl-carousel home-client-carousel2 owl-btn-vertical-center">
+                    
+                        <div class="item">
+                            <div class="ow-client-logo">
+                                <div class="client-logo client-logo-media">
+                                <a href="about-1.html"><img src="@assets('images/client-logo/w1.png')" alt=""></a></div>
+                            </div>
                         </div>
-                        <div class="col-xl-6 col-lg-6 col-md-12 wt-separator-two-part-right text-right">
-                            <a href="about-1.html" class="btn-half site-button"><span>Read More</span><em></em></a>
+                        
+                        <div class="item">
+                            <div class="ow-client-logo">
+                                <div class="client-logo client-logo-media">
+                                <a href="about-1.html"><img src="@assets('images/client-logo/w2.png')" alt=""></a></div>
+                            </div>
                         </div>
+                        
+                        <div class="item">
+                            <div class="ow-client-logo">
+                                <div class="client-logo client-logo-media">
+                                <a href="about-1.html"><img src="@assets('images/client-logo/w3.png')" alt=""></a></div>
+                            </div>
+                        </div>
+                        
+                        <div class="item">
+                            <div class="ow-client-logo">
+                                <div class="client-logo client-logo-media">
+                                <a href="about-1.html"><img src="@assets('images/client-logo/w4.png')" alt=""></a></div>
+                            </div>
+                        </div>
+                        
+                        <div class="item">
+                            <div class="ow-client-logo">
+                                <div class="client-logo client-logo-media">
+                                <a href="about-1.html"><img src="@assets('images/client-logo/w5.png')" alt=""></a></div>
+                            </div>
+                        </div>
+                        
+                        <div class="item">
+                            <div class="ow-client-logo">
+                                <div class="client-logo client-logo-media">
+                                <a href="about-1.html"><img src="@assets('images/client-logo/w1.png')" alt=""></a></div>
+                            </div>
+                        </div>
+                        
+                        <div class="item">
+                            <div class="ow-client-logo">
+                                <div class="client-logo client-logo-media">
+                                <a href="about-1.html"><img src="@assets('images/client-logo/w2.png')" alt=""></a></div>
+                            </div>
+                        </div>
+                        
+                        <div class="item">
+                            <div class="ow-client-logo">
+                                <div class="client-logo client-logo-media">
+                                <a href="about-1.html"><img src="@assets('images/client-logo/w3.png')" alt=""></a></div>
+                            </div>
+                        </div>
+                        
+                        <div class="item">
+                            <div class="ow-client-logo">
+                                <div class="client-logo client-logo-media">
+                                <a href="about-1.html"><img src="@assets('images/client-logo/w4.png')" alt=""></a></div>
+                            </div>
+                        </div>
+                        
+                        <div class="item">
+                            <div class="ow-client-logo">
+                                <div class="client-logo client-logo-media">
+                                <a href="about-1.html"><img src="@assets('images/client-logo/w5.png')" alt=""></a></div>
+                            </div>
+                        </div>
+                        
                     </div>
+
                 </div>
             </div>
+        </div>
+        <!-- CLIENT LOGO  SECTION End --> 
 
-            <div class="tw-estimation-section bg-cover bg-no-repeat" style="background-image: url(images/background/bg-5.jpg);">
-                <div class="container">
-                    <div class="row">
-                        <!--1-->
-                        <div class="col-xl-4 col-lg-4 col-md-6">
-                            <div class="tw-est-section-block">
-                                <div class="tw-est-section-block-content">
-                                    <span class="tw-est-section-number">01</span>
-                                    <h3 class="tw-title">Solutions and specialized expertise</h3>
-                                    <p>Our aim is to optimize and improve your supply chain so that we can give you the best service</p>
-                                    <a href="about-1.html" class="site-button-2-outline"><i class="fa fa-angle-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!--2-->
-                        <div class="col-xl-4 col-lg-4 col-md-6">
-                            <div class="tw-est-section-block">
-                                <div class="tw-est-section-block-content">
-                                    <span class="tw-est-section-number">02</span>
-                                    <h3 class="tw-title">Multiple warehouses</h3>
-                                    <p>We provide multiple drop off and pickup locations so you don't have to worry. And you should not face any kind...</p>
-                                    <a href="about-1.html" class="site-button-2-outline"><i class="fa fa-angle-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!--3-->
-                        <div class="col-xl-4 col-lg-4 col-md-12">
-                            <div class="tw-est-section-block">
-                                <div class="tw-est-section-block-content">
-                                    <span class="tw-est-section-number">03</span>
-                                    <h3 class="tw-title">Tracking made easy</h3>
-                                    <p>A tracking number for the entire process.
-                                        so that you can find the exact position. it 
-                                        will help you</p>
-                                    <a href="about-1.html" class="site-button-2-outline"><i class="fa fa-angle-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>                  
+        <!-- SERVICES SECTION START -->
+        <div class="section-full p-t120 p-b90 site-bg-gray tw-service-gallery-style3-area">
         
+            <div class="services-gallery-block-outer3">
+                <div class="container">
 
-        </div>   
-        <!-- Estimation SECTION END -->
+                    <!-- TITLE START-->
+                    <div class="section-head center wt-small-separator-outer">
+                        <div class="wt-small-separator site-text-primary">
+                            <div>All services</div>                                
+                        </div>
+                        <h2 class="wt-title">Trusted For Our Services</h2>
+                        <p class="section-head-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry the standard dummy text ever since the  when an printer took.</p>
+                    </div>                  
+                    <!-- TITLE END-->
+
+                    <div class="section-content"> 
+                        <div class="services-gallery-style3">
+                            <div class="row justify-content-center">
+                            
+                                <!-- COLUMNS 1 --> 
+                                <div class="col-lg-4 col-md-6 mb-4">
+                                    <div class="service-box-style3">
+                                        <div class="service-media">
+                                            <img src="@assets('images/icons/pic2.png')" alt="">
+                                        </div>
+                                        <div class="service-content">
+                                            <h3 class="service-title-large"><span class="service-title-large-number">01</span><a href="services-detail.html">Sea Air</a></h3>
+                                            <p>Our aim is to optimize and improve your supply chain so that we can give you the best service.</p>
+                                            <a href="services-detail.html" class="site-button-2">View Detail</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- COLUMNS 2 --> 
+                                <div class="col-lg-4 col-md-6 mb-4">
+                                    <div class="service-box-style3">
+                                        <div class="service-media">
+                                            <img src="@assets('images/icons/pic1.png')" alt="">
+                                        </div>
+                                        <div class="service-content">
+                                            <h3 class="service-title-large"><span class="service-title-large-number">02</span><a href="services-detail.html">Land Air</a></h3>
+                                            <p>Our aim is to optimize and improve your supply chain so that we can give you the best service.</p>
+                                            <a href="services-detail.html" class="site-button-2">View Detail</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                              
+                </div>
+            </div>
+            
+        </div>
+        <!-- SERVICES SECTION END -->
 
         <!-- TESTIMONIALS SECTION START -->
         <div class="section-full bg-cover p-t120 p-b120 bg-cover tw-testimonial-2-area" style="background-image:url(images/background/bg-6.jpg);">
@@ -550,7 +533,7 @@
                                     <div class="slick-item">
                                         <div class="tw-testimonials2-section">
                                             <div class="tw-testimonials2-text">
-                                                <span class="tw-testimonials2-quote"><img src="images/quote.png" alt=""></span>
+                                                <span class="tw-testimonials2-quote"><img src="@assets('images/quote.png')" alt=""></span>
                                                 Nemo enim ipsam voluptate voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratio ne voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi
                                             </div>
                                             <div class="tw-testimonials2-name">Peter Len</div>
@@ -560,7 +543,7 @@
                                     <div class="slick-item">
                                         <div class="tw-testimonials2-section">
                                             <div class="tw-testimonials2-text">
-                                                <span class="tw-testimonials2-quote"><img src="images/quote.png" alt=""></span>
+                                                <span class="tw-testimonials2-quote"><img src="@assets('images/quote.png')" alt=""></span>
                                                 Nemo enim ipsam voluptate voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratio ne voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi
                                             </div>
                                             <div class="tw-testimonials2-name">Giselle</div>
@@ -570,7 +553,7 @@
                                     <div class="slick-item">
                                         <div class="tw-testimonials2-section">
                                             <div class="tw-testimonials2-text">
-                                                <span class="tw-testimonials2-quote"><img src="images/quote.png" alt=""></span>
+                                                <span class="tw-testimonials2-quote"><img src="@assets('images/quote.png')" alt=""></span>
                                                 Nemo enim ipsam voluptate voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratio ne voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi
                                             </div>
                                             <div class="tw-testimonials2-name">Josephine</div>
@@ -580,7 +563,7 @@
                                     <div class="slick-item">
                                         <div class="tw-testimonials2-section">
                                             <div class="tw-testimonials2-text">
-                                                <span class="tw-testimonials2-quote"><img src="images/quote.png" alt=""></span>
+                                                <span class="tw-testimonials2-quote"><img src="@assets('images/quote.png')" alt=""></span>
                                                 Nemo enim ipsam voluptate voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratio ne voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi
                                             </div>
                                             <div class="tw-testimonials2-name">Penelope</div>
@@ -593,22 +576,22 @@
                                 
                                     <div class="slick-item">
                                         <div class="slick-testimonials-2-thumbpic">
-                                            <img src="images/testimonials/pic1.jpg" alt="one">
+                                            <img src="@assets('images/testimonials/pic1.jpg')" alt="one">
                                         </div>
                                     </div>
                                     <div class="slick-item">
                                         <div class="slick-testimonials-2-thumbpic">
-                                            <img src="images/testimonials/pic2.jpg" alt="two">
+                                            <img src="@assets('images/testimonials/pic2.jpg')" alt="two">
                                         </div>
                                     </div>
                                     <div class="slick-item">
                                         <div class="slick-testimonials-2-thumbpic">
-                                            <img src="images/testimonials/pic3.jpg" alt="three">
+                                            <img src="@assets('images/testimonials/pic3.jpg')" alt="three">
                                         </div>
                                     </div>
                                     <div class="slick-item">
                                         <div class="slick-testimonials-2-thumbpic">
-                                            <img src="images/testimonials/pic4.jpg" alt="four">
+                                            <img src="@assets('images/testimonials/pic4.jpg')" alt="four">
                                         </div>
                                     </div>                                    
                                 </div>                            
@@ -623,10 +606,6 @@
             </div>   
         </div>
         <!-- TESTIMONIALS  SECTION End --> 
-    
-        
-
-    
 
         <!-- OUR BLOG START -->
         <div class="section-full p-t120 p-b90 site-bg-gray bg-cover">
@@ -649,7 +628,7 @@
                             <!--Block one-->
                             <div class="blog-post blog-post-4-outer">
                                 <div class="wt-post-media wt-img-effect zoom-slow">
-                                    <a href="blog-single.html"><img src="images/blog/latest/bg1.jpg" alt=""></a>
+                                    <a href="blog-single.html"><img src="@assets('images/blog/latest/bg1.jpg')" alt=""></a>
                                 </div>                                    
                                 <div class="wt-post-info">
                                     <div class="wt-post-meta ">
@@ -678,7 +657,7 @@
                             <!--Block two-->
                             <div class="blog-post blog-post-4-outer">
                                 <div class="wt-post-media wt-img-effect zoom-slow">
-                                    <a href="blog-single.html"><img src="images/blog/latest-2/l-1.jpg" alt=""></a>
+                                    <a href="blog-single.html"><img src="@assets('images/blog/latest-2/l-1.jpg')" alt=""></a>
                                 </div>                                     
                                 <div class="wt-post-info">
                                     <div class="wt-post-meta ">
@@ -706,7 +685,7 @@
                             <!--Block three-->
                             <div class="blog-post blog-post-4-outer">
                                 <div class="wt-post-media wt-img-effect zoom-slow">
-                                    <a href="blog-single.html"><img src="images/blog/latest/bg3.jpg" alt=""></a>
+                                    <a href="blog-single.html"><img src="@assets('images/blog/latest/bg3.jpg')" alt=""></a>
                                 </div>                                     
                                 <div class="wt-post-info">
                                     <div class="wt-post-meta ">
@@ -738,94 +717,8 @@
         </div>
         <!-- OUR BLOG END -->
 
-        <!-- COMPANY APPROCH SECTION START -->
-        <div class="section-full p-t120 p-b90 site-bg-white tw-company-approch-area">
-                    
-            <div class="container">
-
-                <div class="wt-separator-two-part">
-                    <div class="row wt-separator-two-part-row">
-                        <div class="col-xl-6 col-lg-6 col-md-12 wt-separator-two-part-left">
-                            <!-- TITLE START-->
-                            <div class="section-head left wt-small-separator-outer">
-                                <div class="wt-small-separator site-text-primary">
-                                <div>Company Approch</div>                                
-                                </div>
-                                <h2 class="wt-title">Reliable Logistic & Transport Solutions</h2>
-                            </div>                  
-                            <!-- TITLE END-->
-                        </div>
-                        <div class="col-xl-6 col-lg-6 col-md-12 wt-separator-two-part-right text-right">
-                            <a href="about-1.html" class="btn-half site-button"><span>Read More</span><em></em></a>
-                        </div>
-                    </div>
-                </div>
-
-                
-                <div class="tw-company-approch-section">
-                    <div class="tw-company-approch-inner">
-                        <div class="tw-company-years">
-                            <div class="light">
-                                <h1>35</h1>
-                            <img src="images/text-bg.jpg" alt="">
-                            </div>
-                            <div class="tw-company-info">
-                                <span>Year’s of experience in transport and logistics services</span>
-                            </div>
-                        </div>
-
-                        <div class="row">
-
-                            <!--block 1-->
-                            <div class="col-lg-4 col-md-12">
-                                <div class="counter-outer-two">
-                                    <div class="tw-counter-media">
-                                        <img src="images/icons/c-pic1.png" alt="">
-                                    </div>
-                                    <div class="icon-content">
-                                        <div class="tw-count-number site-text-primary"><span class="counter site-text-primary">195</span>+</div>
-                                        <h3 class="icon-content-info">Professional Staff</h3>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--block 2-->
-                            <div class="col-lg-4 col-md-12">
-                                <div class="counter-outer-two">
-                                    <div class="tw-counter-media">
-                                        <img src="images/icons/c-pic2.png" alt="">
-                                    </div>
-                                    <div class="icon-content">
-                                        <div class="tw-count-number site-text-primary"><span class="counter site-text-primary">250</span>+</div>
-                                        <h3 class="icon-content-info">On Time Delievery</h3>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--block 3-->
-                            <div class="col-lg-4 col-md-12">
-                                <div class="counter-outer-two">
-                                    <div class="tw-counter-media">
-                                        <img src="images/icons/c-pic3.png" alt="">
-                                    </div>
-                                    <div class="icon-content">
-                                        <div class="tw-count-number site-text-primary"><span class="counter site-text-primary">350</span>+</div>
-                                        <h3 class="icon-content-info">Technology and Media</h3>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>                 
-            </div>
-
-        </div>   
-        <!-- COMPANY APPROCH SECTION END -->
-
         <!-- LATEST PRJECTS SLIDER START -->
-        <div class="section-full section-full p-t120 p-b90 tw-project-2-wrap site-bg-gray">
+        {{-- <div class="section-full section-full p-t120 p-b90 tw-project-2-wrap site-bg-gray">
             <!-- IMAGE CAROUSEL START -->
             <div class="section-content">
             
@@ -849,10 +742,10 @@
                             <div class="item">
                                 <div class="project-new-2">
                                     <div class="wt-img-effect">
-                                        <img src="images/project/1.jpg" alt="">
+                                        <img src="@assets('images/project/1.jpg')" alt="">
                                         <div class="project-view">
-                                            <a class="elem pic-long project-view-btn" href="images/project/1.jpg" title="Nh-16 Highway Bridge" 
-                                            data-lcl-txt="" data-lcl-author="" data-lcl-thumb="images/project/1.jpg">
+                                            <a class="elem pic-long project-view-btn" href="@assets('images/project/1.jpg')" title="Nh-16 Highway Bridge" 
+                                            data-lcl-txt="" data-lcl-author="" data-lcl-thumb="@assets('images/project/1.jpg')">
                                             <i class="fa fa-search-plus"></i>     
                                             </a> 
                                         </div> 
@@ -868,10 +761,10 @@
                             <div class="item">
                                 <div class="project-new-2">
                                     <div class="wt-img-effect">
-                                        <img src="images/project/2.jpg" alt="">
+                                        <img src="@assets('images/project/2.jpg')" alt="">
                                         <div class="project-view">
-                                            <a class="elem pic-long project-view-btn" href="images/project/2.jpg" title="Nh-16 Highway Bridge" 
-                                            data-lcl-txt="" data-lcl-author="" data-lcl-thumb="images/project/2.jpg">
+                                            <a class="elem pic-long project-view-btn" href="@assets('images/project/2.jpg')" title="Nh-16 Highway Bridge" 
+                                            data-lcl-txt="" data-lcl-author="" data-lcl-thumb="@assets('images/project/2.jpg')">
                                             <i class="fa fa-search-plus"></i>     
                                             </a> 
                                         </div> 
@@ -887,10 +780,10 @@
                             <div class="item">
                                 <div class="project-new-2">
                                     <div class="wt-img-effect">
-                                        <img src="images/project/3.jpg" alt="">
+                                        <img src="@assets('images/project/3.jpg')" alt="">
                                         <div class="project-view">
-                                            <a class="elem pic-long project-view-btn" href="images/project/3.jpg" title="Nh-16 Highway Bridge" 
-                                            data-lcl-txt="" data-lcl-author="" data-lcl-thumb="images/project/3.jpg">
+                                            <a class="elem pic-long project-view-btn" href="@assets('images/project/3.jpg')" title="Nh-16 Highway Bridge" 
+                                            data-lcl-txt="" data-lcl-author="" data-lcl-thumb="@assets('images/project/3.jpg')">
                                             <i class="fa fa-search-plus"></i>     
                                             </a> 
                                         </div> 
@@ -907,10 +800,10 @@
                             <div class="item">
                                 <div class="project-new-2">
                                     <div class="wt-img-effect">
-                                        <img src="images/project/4.jpg" alt="">
+                                        <img src="@assets('images/project/4.jpg')" alt="">
                                         <div class="project-view">
-                                            <a class="elem pic-long project-view-btn" href="images/project/4.jpg" title="Nh-16 Highway Bridge" 
-                                            data-lcl-txt="" data-lcl-author="" data-lcl-thumb="images/project/4.jpg">
+                                            <a class="elem pic-long project-view-btn" href="@assets('images/project/4.jpg')" title="Nh-16 Highway Bridge" 
+                                            data-lcl-txt="" data-lcl-author="" data-lcl-thumb="@assets('images/project/4.jpg')">
                                             <i class="fa fa-search-plus"></i>     
                                             </a> 
                                         </div> 
@@ -927,10 +820,10 @@
                             <div class="item">
                                 <div class="project-new-2">
                                     <div class="wt-img-effect">
-                                        <img src="images/project/5.jpg" alt="">
+                                        <img src="@assets('images/project/5.jpg')" alt="">
                                         <div class="project-view">
-                                            <a class="elem pic-long project-view-btn" href="images/project/5.jpg" title="Nh-16 Highway Bridge" 
-                                            data-lcl-txt="" data-lcl-author="" data-lcl-thumb="images/project/5.jpg">
+                                            <a class="elem pic-long project-view-btn" href="@assets('images/project/5.jpg')" title="Nh-16 Highway Bridge" 
+                                            data-lcl-txt="" data-lcl-author="" data-lcl-thumb="@assets('images/project/5.jpg')">
                                             <i class="fa fa-search-plus"></i>     
                                             </a> 
                                         </div> 
@@ -947,10 +840,10 @@
                             <div class="item">
                                 <div class="project-new-2">
                                     <div class="wt-img-effect">
-                                        <img src="images/project/6.jpg" alt="">
+                                        <img src="@assets('images/project/6.jpg')" alt="">
                                         <div class="project-view">
-                                            <a class="elem pic-long project-view-btn" href="images/project/6.jpg" title="Nh-16 Highway Bridge" 
-                                            data-lcl-txt="" data-lcl-author="" data-lcl-thumb="images/project/6.jpg">
+                                            <a class="elem pic-long project-view-btn" href="@assets('images/project/6.jpg')" title="Nh-16 Highway Bridge" 
+                                            data-lcl-txt="" data-lcl-author="" data-lcl-thumb="@assets('images/project/6.jpg')">
                                             <i class="fa fa-search-plus"></i>     
                                             </a> 
                                         </div> 
@@ -970,118 +863,8 @@
 
             </div>
             
-        </div>   
+        </div>    --}}
         <!-- LATEST PRJECTS SLIDER END -->
-
-        
-
-        <!-- PRICING TABLE SECTION START -->
-        <div class="section-full p-t120 p-b90 site-bg-white tw-pricing-area">
-            
-            <div class="container">
-                
-                <!-- TITLE START-->
-                <div class="section-head center wt-small-separator-outer">
-                    <div class="wt-small-separator site-text-primary">
-                        <div>Our Plan</div>                                
-                    </div>
-                    <h2 class="wt-title">The right price for you whoever you are</h2>
-                </div>                  
-                <!-- TITLE END-->
-                        
-                <div class="section-content">
-                    <div class="pricing-block-outer">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-4 col-md-6 m-b30">
-                                <div class="pricing-table-1">
-                                    <div class="p-table-title">
-                                        <h4 class="wt-title">
-                                            Startup
-                                        </h4>
-                                    </div>
-                                    <div class="p-table-inner">
-                                        <div class="p-table-price">
-                                            <span>90$</span>
-                                            <p>/Monthly</p>
-                                        </div>
-                                        <div class="p-table-list">
-                                            <ul>
-                                                <li>Additional</li>
-                                                <li>Warehouing</li>
-                                                <li>Custos Borkerage</li>
-                                                <li>Unlimited Transfer</li>
-                                            </ul>
-                                        </div>
-                                        <div class="p-table-btn">
-                                            <a href="about-1.html" class="btn-half site-button"><span>Buy Now</span><em></em></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 col-md-6 p-table-highlight m-b30">
-                                <div class="pricing-table-1">
-                                    
-                                    <div class="p-table-title">
-                                        <h4 class="wt-title">
-                                            Standard
-                                        </h4>
-                                    </div>
-                                    <div class="p-table-inner">
-                                        <div class="p-table-price">
-                                            <span>150$</span>
-                                            <p>/Monthly</p>
-                                        </div>
-                                        <div class="p-table-list">
-                                            <ul>
-                                                <li>Additional</li>
-                                                <li>Warehouing</li>
-                                                <li>Custos Borkerage</li>
-                                                <li>Unlimited Transfer</li>
-                                            </ul>
-                                        </div>
-                                        <div class="p-table-btn">
-                                            <a href="about-1.html" class="btn-half site-button"><span>Buy Now</span><em></em></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="col-lg-4 col-md-6 m-b30">
-                                <div class="pricing-table-1">
-                                    <div class="p-table-title">
-                                        <h4 class="wt-title">
-                                            Business
-                                        </h4>
-                                    </div>
-                                    <div class="p-table-inner">
-                                        <div class="p-table-price">
-                                            <span>260$</span>
-                                            <p>/Monthly</p>
-                                        </div>
-                                        <div class="p-table-list">
-                                            <ul>
-                                                <li>Additional</li>
-                                                <li>Warehouing</li>
-                                                <li>Custos Borkerage</li>
-                                                <li>Unlimited Transfer</li>
-                                            </ul>
-                                        </div>
-                                        <div class="p-table-btn">
-                                            <a href="about-1.html" class="btn-half site-button"><span>Buy Now</span><em></em></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>                                
-
-                        </div>
-                    </div>
-                </div>      
-                    
-            </div>
-        </div>   
-        <!-- PRICING TABLE SECTION END --> 
-        
 
     </div>
     <!-- CONTENT END -->

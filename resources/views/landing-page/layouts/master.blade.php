@@ -41,13 +41,13 @@
     <link rel="stylesheet" href="@assets('css/lc_lightbox.css')" />     
     <!-- Price Range Slider -->
     <link rel="stylesheet" href="@assets('css/bootstrap-slider.min.css')" />
+    <!-- MAIN STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="@assets('css/custom.css')">
 
     <!-- REVOLUTION SLIDER CSS -->
     <link rel="stylesheet" type="text/css" href="@assets('plugins/revolution/revolution/css/settings.css')">
     <!-- REVOLUTION NAVIGATION STYLE -->
     <link rel="stylesheet" type="text/css" href="@assets('plugins/revolution/revolution/css/navigation.css')">
-    
-
     
     @stack('head')
 </head>
