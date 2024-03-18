@@ -15,4 +15,9 @@ class PageController extends Controller
     {
         return view('landing-page.pages.home');
     }
+
+    public function about()
+    {
+        return view('landing-page.pages.about');
+    }
 }

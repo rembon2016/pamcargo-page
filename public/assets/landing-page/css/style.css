@@ -8361,12 +8361,12 @@ select {
   bottom: 0px;
   max-width: 1140px;
   width: 100%;
-  border: 70px solid #1e8fd0;
+  border: 70px solid #54a021;
   transform: translateX(-50%);
 }
 @media (max-width: 991px) {
   .tw-testimonial-2-area .tw-outer-border {
-    border: 40px solid #1e8fd0;
+    border: 40px solid #54a021;
   }
 }
 @media (max-width: 575px) {

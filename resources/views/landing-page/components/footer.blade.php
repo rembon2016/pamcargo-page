@@ -31,7 +31,7 @@
                         <div class="widget widget_services ftr-list-center">
                             <h3 class="widget-title">Quick Links</h3>
                             <ul>
-                                <li><a href="about-1.html">About</a></li>
+                                <li><a href="{{ route('about') }}">About</a></li>
                                 <li><a href="services-1.html">Rate Request</a></li>
                                 <li><a href="blog-grid.html">News</a></li>
                                 <li><a href="contact.html">Contact</a></li>

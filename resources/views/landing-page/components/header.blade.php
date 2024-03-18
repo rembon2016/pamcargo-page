@@ -38,7 +38,7 @@
                             <a href="{{ route('home') }}">Home</a>
                         </li>
                         <li>
-                            <a href="{{ route('home') }}">About</a>
+                            <a href="{{ route('about') }}">About</a>
                         </li>
                         <li class="has-child"><a href="javascript:;">Services</a>
                             <ul class="sub-menu">

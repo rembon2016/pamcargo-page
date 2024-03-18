@@ -4934,10 +4934,10 @@ select {
 		bottom: 0px;
 		max-width:1140px;
 		width: 100%;
-		border: 70px solid #1e8fd0;;
+		border: 70px solid $clr-primary;;
 		transform: translateX(-50%);
 		@include breakpoint-991{
-			border: 40px solid #1e8fd0;
+			border: 40px solid $clr-primary;
 		}
 		@include breakpoint-575{
 			border: 0px;
