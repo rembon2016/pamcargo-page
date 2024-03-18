@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LandingPage\Base\PageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,17 +16,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::view('/', 'index-4')->name('home');
-Route::view('/index-2', 'index-2');
-Route::view('/index-3', 'index-3');
-Route::view('/index-4', 'index-4');
-
-Route::view('/services', 'services-1');
-Route::view('/services-2', 'services-2');
+Route::get('/', [PageController::class, 'home'])->name('home');
 
 // Admin Routes
 require __DIR__ . '/adm.php';

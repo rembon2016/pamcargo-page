@@ -3,7 +3,7 @@
 <footer class="footer-dark">
 
     <!-- NEWS LETTER SECTION START -->
-    <div class="ftr-nw-ltr site-bg-white">
+    {{-- <div class="ftr-nw-ltr site-bg-white">
         
             <div class="ftr-nw-ltr-inner site-bg-primary">
                 <div class="container">
@@ -21,7 +21,7 @@
                     </div>
                 </div>
             </div>
-    </div>
+    </div> --}}
     <!-- NEWS LETTER SECTION END -->
 
     <div class="ftr-bg"  style="background-image: url(images/f-bg.jpg);">
