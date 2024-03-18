@@ -2,32 +2,33 @@
 
 declare(strict_types=1);
 
-use App\Http\Controllers\Adm\Auth\LoginController;
+use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Adm\DashboardController;
-use App\Http\Controllers\Adm\General\About\MissionController;
-use App\Http\Controllers\Adm\General\About\ObjectiveController;
-use App\Http\Controllers\Adm\General\About\OurTeamController;
-use App\Http\Controllers\Adm\General\About\OverviewController;
-use App\Http\Controllers\Adm\General\About\VisionController;
-use App\Http\Controllers\Adm\General\Contact\ContentContactController;
-use App\Http\Controllers\Adm\General\Contact\FooterContactController;
-use App\Http\Controllers\Adm\General\EmailCarbonController;
-use App\Http\Controllers\Adm\General\ImprintController;
-use App\Http\Controllers\Adm\General\PrivacyPolicyController;
-use App\Http\Controllers\Adm\General\Services\LandAirServiceController;
-use App\Http\Controllers\Adm\General\Services\SeaAirServiceController;
+use App\Http\Controllers\Adm\Auth\LoginController;
+use App\Http\Controllers\Adm\Auth\LogoutController;
 use App\Http\Controllers\Adm\General\SliderController;
 use App\Http\Controllers\Adm\General\WidgetController;
-use App\Http\Controllers\Adm\Monitoring\SystemLogController;
-use App\Http\Controllers\Adm\Monitoring\VisitorLogController;
-use App\Http\Controllers\Adm\UserActivities\AgentController;
-use App\Http\Controllers\Adm\UserActivities\ContinentController;
-use App\Http\Controllers\Adm\UserActivities\CustomerMessageController;
+use App\Http\Controllers\Adm\General\ImprintController;
+use App\Http\Controllers\Adm\General\EmailCarbonController;
 use App\Http\Controllers\Adm\UserActivities\NewsController;
-use App\Http\Controllers\Adm\UserActivities\OfficeController;
-use App\Http\Controllers\Adm\UserActivities\RateRequestController;
 use App\Http\Controllers\Adm\UserActivities\UserController;
-use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Adm\General\About\VisionController;
+use App\Http\Controllers\Adm\Monitoring\SystemLogController;
+use App\Http\Controllers\Adm\UserActivities\AgentController;
+use App\Http\Controllers\Adm\General\About\MissionController;
+use App\Http\Controllers\Adm\General\About\OurTeamController;
+use App\Http\Controllers\Adm\General\PrivacyPolicyController;
+use App\Http\Controllers\Adm\Monitoring\VisitorLogController;
+use App\Http\Controllers\Adm\UserActivities\OfficeController;
+use App\Http\Controllers\Adm\General\About\OverviewController;
+use App\Http\Controllers\Adm\General\About\ObjectiveController;
+use App\Http\Controllers\Adm\UserActivities\ContinentController;
+use App\Http\Controllers\Adm\UserActivities\RateRequestController;
+use App\Http\Controllers\Adm\General\Contact\FooterContactController;
+use App\Http\Controllers\Adm\General\Contact\ContentContactController;
+use App\Http\Controllers\Adm\General\Services\SeaAirServiceController;
+use App\Http\Controllers\Adm\UserActivities\CustomerMessageController;
+use App\Http\Controllers\Adm\General\Services\LandAirServiceController;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,7 +42,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 // Admin
-Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
+Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['auth']], function () {
 
     // Dashboard
     Route::get('/', [DashboardController::class, 'index'])
@@ -234,10 +235,18 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
 });
 
 // Auth
-Route::group(['prefix' => 'auth', 'as' => 'auth.'], function () {
+Route::group(['prefix' => 'auth', 'as' => 'auth.', 'middleware' => ['guest']], function () {
 
     // Login
     Route::get('/login', [LoginController::class, 'index'])
         ->name('login');
+    Route::post('/login', [LoginController::class, 'authenticate'])
+        ->name('authenticate');
+
+    // Logout
+    Route::get('/logout', [LogoutController::class, 'logout'])
+        ->withoutMiddleware(['guest'])
+        ->middleware(['auth'])
+        ->name('logout');
 
 });
