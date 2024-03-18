@@ -16,6 +16,16 @@ class Service extends Model
     /**
      * @var string
      */
+    CONST SEA_AIR_TYPE = 'sea';
+
+    /**
+     * @var string
+     */
+    CONST LAND_AIR_TYPE = 'land';
+
+    /**
+     * @var string
+     */
     protected $table = 'services';
 
     /**

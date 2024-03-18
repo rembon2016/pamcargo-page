@@ -127,10 +127,14 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['auth']], 
             // Sea Air
             Route::get('/sea-air', [SeaAirServiceController::class, 'index'])
                 ->name('sea.index');
+            Route::post('/sea-air', [SeaAirServiceController::class, 'createOrUpdate'])
+                ->name('sea.save');
 
             // Land Air
             Route::get('/land-air', [LandAirServiceController::class, 'index'])
                 ->name('land.index');
+            Route::post('/land-air', [LandAirServiceController::class, 'createOrUpdate'])
+                ->name('land.save');
 
         });
 

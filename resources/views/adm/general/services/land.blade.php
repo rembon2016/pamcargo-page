@@ -30,6 +30,7 @@
                                 class="form-control @error('title') is-invalid @enderror"
                                 name="title"
                                 id="title"
+                                value="{{ old('title', @$service->title) }}"
                                 required
                             >
                             @error('title')
@@ -40,9 +41,9 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="title">Description <sup class="text-danger">*</sup></label>
-                            <textarea rows="10" class="form-control summernotes" data-placeholder="" name="description" required>{{ old('description') }}</textarea>
-                            @error('title')
+                            <label for="description">Description <sup class="text-danger">*</sup></label>
+                            <textarea rows="10" class="form-control summernotes" data-placeholder="" name="description" required>{{ old('description', @$service->description) }}</textarea>
+                            @error('description')
                                 <div class="invalid-feedback">
                                     {{ $errors->first('description') }}
                                 </div>
