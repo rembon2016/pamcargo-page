@@ -92,22 +92,32 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['auth']], 
             // Overview
             Route::get('/overview', [OverviewController::class, 'index'])
                 ->name('overview.index');
+            Route::post('/overview', [OverviewController::class, 'createOrUpdate'])
+                ->name('overview.save');
 
             // Objective
             Route::get('/objective', [ObjectiveController::class, 'index'])
                 ->name('objective.index');
+            Route::post('/objective', [ObjectiveController::class, 'createOrUpdate'])
+                ->name('objective.save');
 
             // Vision
             Route::get('/vision', [VisionController::class, 'index'])
                 ->name('vision.index');
+            Route::post('/vision', [VisionController::class, 'createOrUpdate'])
+                ->name('vision.save');
 
             // Mission
             Route::get('/mission', [MissionController::class, 'index'])
                 ->name('mission.index');
+            Route::post('/mission', [MissionController::class, 'createOrUpdate'])
+                ->name('mission.save');
 
             // Our Team
             Route::get('/ourteam', [OurTeamController::class, 'index'])
                 ->name('ourteam.index');
+            Route::post('/ourteam', [OurTeamController::class, 'createOrUpdate'])
+                ->name('ourteam.save');
 
         });
 
