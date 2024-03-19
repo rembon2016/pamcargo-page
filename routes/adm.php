@@ -217,8 +217,17 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['auth']], 
                 ->name('index');
             Route::get('/create', [WidgetController::class, 'create'])
                 ->name('create');
+            Route::post('/store', [WidgetController::class, 'store'])
+                ->name('store');
+            Route::get('/{id}/edit', [WidgetController::class, 'edit'])
+                ->name('edit');
+            Route::put('/{id}/update', [WidgetController::class, 'update'])
+                ->name('update');
+            Route::get('/{id}/set-status', [WidgetController::class, 'setUsageStatus'])
+                ->name('set_usage_status');
+            Route::delete('/{id}/delete', [WidgetController::class, 'delete'])
+                ->name('delete');
         });
-
     });
 
     // User Activities

@@ -25,26 +25,48 @@
                             <thead>
                                 <tr>
                                     <th>#</th>
-                                    <th>Col 1</th>
-                                    <th>Col 2</th>
+                                    <th>Title</th>
+                                    <th>Url</th>
+                                    <th>Description</th>
                                     <th>Actions?</th>
                                 </tr>
                             </thead>
                             <tfoot>
                                 <tr>
                                     <th>#</th>
-                                    <th>Col 1</th>
-                                    <th>Col 2</th>
+                                    <th>Title</th>
+                                    <th>Url</th>
+                                    <th>Description</th>
                                     <th>Actions?</th>
                                 </tr>
                             </tfoot>
                             <tbody>
-                                <tr>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                </tr>
+                                @foreach ($widgets as $widget)
+                                    <tr>
+                                        <td>{{ $loop->iteration }}</td>
+                                        <td>{{ $widget->title }}</td>
+                                        <td>{{ $widget->url }}</td>
+                                        <td>{!! Utilities::decodeHtmlEntity($widget->description) !!}</td>
+                                        <td>
+                                            @if ($widget->is_active)
+                                                <a href="{{ route('admin.general.widget.set_usage_status', ['id' => $widget->id, 's' => 'inactive']) }}"
+                                                    class="btn btn-primary btn-sm">
+                                                    <i class="fa fa-check"></i>
+                                                </a>
+                                            @else
+                                                <a href="{{ route('admin.general.widget.set_usage_status', ['id' => $widget->id, 's' => 'active']) }}"
+                                                    class="btn btn-warning btn-sm">
+                                                    <i class="fa fa-times"></i>
+                                                </a>
+                                            @endif
+                                            <a href="{{ route('admin.general.widget.edit', $widget->id) }}"
+                                                class="btn btn-success btn-sm">
+                                                <i class="fa fa-edit"></i>
+                                            </a>
+                                            <x-delete-btn :url="route('admin.general.widget.delete', $widget->id)" />
+                                        </td>
+                                    </tr>
+                                @endforeach
                             </tbody>
                         </table>
                     </div>
