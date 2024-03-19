@@ -207,6 +207,8 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['auth']], 
         Route::group(['prefix' => 'imprint', 'as' => 'imprint.'], function () {
             Route::get('/index', [ImprintController::class, 'index'])
                 ->name('index');
+            Route::post('/index', [ImprintController::class, 'createOrUpdate'])
+                ->name('save');
         });
 
         // Widget Quick Access
