@@ -38,22 +38,22 @@
                             <a href="{{ route('home') }}">Home</a>
                         </li>
                         <li>
-                            <a href="{{ route('home') }}">About</a>
+                            <a href="{{ route('about') }}">About</a>
                         </li>
                         <li class="has-child"><a href="javascript:;">Services</a>
                             <ul class="sub-menu">
-                                <li><a href="services-1.html">Sea Air Service</a></li>
-                                <li><a href="services-2.html">Land Air Service</a></li>
+                                <li><a href="{{ route('sea-air') }}">Sea Air Service</a></li>
+                                <li><a href="{{ route('land-air') }}">Land Air Service</a></li>
                             </ul>                                                                 
                         </li>
                         <li>
-                            <a href="{{ route('home') }}">Rate Request</a>
+                            <a href="{{ route('rate-request') }}">Rate Request</a>
                         </li>
                         <li>
                             <a href="{{ route('home') }}">News</a>
                         </li>
                         <li>
-                            <a href="contact.html">Contact</a>
+                            <a href="{{ route('contact') }}">Contact</a>
                         </li>
                     </ul>
 

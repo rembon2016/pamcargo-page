@@ -31,10 +31,12 @@
                         <div class="widget widget_services ftr-list-center">
                             <h3 class="widget-title">Quick Links</h3>
                             <ul>
-                                <li><a href="about-1.html">About</a></li>
-                                <li><a href="services-1.html">Rate Request</a></li>
+                                <li><a href="{{ route('about') }}">About</a></li>
+                                <li><a href="{{ route('about') }}">Offices</a></li>
                                 <li><a href="blog-grid.html">News</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="{{ route('about') }}">Imprint</a></li>
+                                <li><a href="{{ route('contact') }}">Contact</a></li>
+                                <li><a href="{{ route('rate-request') }}">Rate Request</a></li>
                             </ul>
                         </div>
                     </div>
@@ -43,8 +45,8 @@
                         <div class="widget widget_services ftr-list-center">
                             <h3 class="widget-title">Services</h3>
                             <ul>
-                                <li><a href="services-detail.html">Sea Air</a></li>
-                                <li><a href="services-detail.html">Land Air</a></li>
+                                <li><a href="{{ route('sea-air') }}">Sea Air</a></li>
+                                <li><a href="{{ route('land-air') }}">Land Air</a></li>
                             </ul>
                         </div>
                     </div>
