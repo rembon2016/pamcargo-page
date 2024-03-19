@@ -47,7 +47,7 @@
                             </ul>                                                                 
                         </li>
                         <li>
-                            <a href="{{ route('home') }}">Rate Request</a>
+                            <a href="{{ route('rate-request') }}">Rate Request</a>
                         </li>
                         <li>
                             <a href="{{ route('home') }}">News</a>

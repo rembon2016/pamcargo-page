@@ -35,4 +35,9 @@ class PageController extends Controller
     {
         return view('landing-page.pages.contact');
     }
+
+    public function rateRequest()
+    {
+        return view('landing-page.pages.rate-request');
+    }
 }

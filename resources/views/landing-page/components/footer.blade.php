@@ -36,7 +36,7 @@
                                 <li><a href="blog-grid.html">News</a></li>
                                 <li><a href="{{ route('about') }}">Imprint</a></li>
                                 <li><a href="{{ route('contact') }}">Contact</a></li>
-                                <li><a href="services-1.html">Rate Request</a></li>
+                                <li><a href="{{ route('rate-request') }}">Rate Request</a></li>
                             </ul>
                         </div>
                     </div>
