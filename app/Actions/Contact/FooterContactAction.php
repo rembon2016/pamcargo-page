@@ -52,6 +52,20 @@ class FooterContactAction
      * @param array $dto
      * @return array|object
      */
+    public function setFooterContactStatus(array $dto): array|object
+    {
+        $footerContact = FooterContact::find($dto['footer_contact_id']);
+        $changingFooterContactStatus = tap($footerContact)->update([
+            'is_active' => $dto['s'] == 'active' ? true : false,
+        ]);
+
+        return Utilities::arrayObjectResponse($changingFooterContactStatus->toArray());
+    }
+
+    /**
+     * @param array $dto
+     * @return array|object
+     */
     public function deleteFooterContact(array $dto): array|object
     {
         $footerContact = FooterContact::find($dto['footer_contact_id']);

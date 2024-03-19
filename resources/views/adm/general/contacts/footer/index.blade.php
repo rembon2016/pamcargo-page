@@ -87,6 +87,15 @@
                                         </td>
                                         <td>{!! Utilities::decodeHtmlEntity($footer->description) !!}</td>
                                         <td>
+                                            @if ($footer->is_active)
+                                                <a href="{{ route('admin.general.contact.footer.set_usage_status', ['id' => $footer->id, 's' => 'inactive']) }}" class="btn btn-primary btn-sm">
+                                                    <i class="fa fa-check"></i>
+                                                </a>
+                                            @else
+                                                <a href="{{ route('admin.general.contact.footer.set_usage_status', ['id' => $footer->id, 's' => 'active']) }}" class="btn btn-warning btn-sm">
+                                                    <i class="fa fa-times"></i>
+                                                </a>
+                                            @endif
                                             <a href="{{ route('admin.general.contact.footer.edit', $footer->id) }}"
                                                 class="btn btn-success btn-sm">
                                                 <i class="fa fa-edit"></i>

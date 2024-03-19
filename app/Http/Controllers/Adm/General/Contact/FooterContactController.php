@@ -102,6 +102,21 @@ class FooterContactController extends Controller
     }
 
     /**
+     * @param Request $request
+     * @param string $id
+     * @return RedirectResponse
+     */
+    public function setUsageStatus(Request $request, string $id): RedirectResponse
+    {
+        $footerContactAction = new FooterContactAction();
+        $footerContactAction->setFooterContactStatus($request->except('_token') + ['footer_contact_id' => $id]);
+
+        return redirect()
+            ->route('admin.general.contact.footer.index')
+            ->with('success', 'Status was Changed!');
+    }
+
+    /**
      * @param string $id
      * @return RedirectResponse
      */

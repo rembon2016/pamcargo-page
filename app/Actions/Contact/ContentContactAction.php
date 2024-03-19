@@ -54,6 +54,20 @@ class ContentContactAction
      * @param array $dto
      * @return array|object
      */
+    public function setContentContactStatus(array $dto): array|object
+    {
+        $contentContact = ContentContact::find($dto['content_contact_id']);
+        $changingContentContactStatus = tap($contentContact)->update([
+            'is_active' => $dto['s'] == 'active' ? true : false,
+        ]);
+
+        return Utilities::arrayObjectResponse($changingContentContactStatus->toArray());
+    }
+
+    /**
+     * @param array $dto
+     * @return array|object
+     */
     public function deleteContentContact(array $dto): array|object
     {
         $contentContact = ContentContact::find($dto['content_contact_id']);

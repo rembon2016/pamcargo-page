@@ -88,6 +88,15 @@
                                         </td>
                                         <td>{!! Utilities::decodeHtmlEntity($content->description) !!}</td>
                                         <td>
+                                            @if ($content->is_active)
+                                                <a href="{{ route('admin.general.contact.content.set_usage_status', ['id' => $content->id, 's' => 'inactive']) }}" class="btn btn-primary btn-sm">
+                                                    <i class="fa fa-check"></i>
+                                                </a>
+                                            @else
+                                                <a href="{{ route('admin.general.contact.content.set_usage_status', ['id' => $content->id, 's' => 'active']) }}" class="btn btn-warning btn-sm">
+                                                    <i class="fa fa-times"></i>
+                                                </a>
+                                            @endif
                                             <a href="{{ route('admin.general.contact.content.edit', $content->id) }}"
                                                 class="btn btn-success btn-sm">
                                                 <i class="fa fa-edit"></i>

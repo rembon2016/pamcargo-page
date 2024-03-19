@@ -169,6 +169,8 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['auth']], 
                     ->name('edit');
                 Route::put('/{id}/update', [ContentContactController::class, 'update'])
                     ->name('update');
+                Route::get('/{id}/set-status', [ContentContactController::class, 'setUsageStatus'])
+                    ->name('set_usage_status');
                 Route::delete('/{id}/delete', [ContentContactController::class, 'delete'])
                     ->name('delete');
             });
@@ -185,6 +187,8 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['auth']], 
                     ->name('edit');
                 Route::put('/{id}/update', [FooterContactController::class, 'update'])
                     ->name('update');
+                Route::get('/{id}/set-status', [FooterContactController::class, 'setUsageStatus'])
+                    ->name('set_usage_status');
                 Route::delete('/{id}/delete', [FooterContactController::class, 'delete'])
                     ->name('delete');
             });

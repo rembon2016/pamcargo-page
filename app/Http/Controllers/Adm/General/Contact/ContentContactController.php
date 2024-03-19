@@ -104,6 +104,21 @@ class ContentContactController extends Controller
     }
 
     /**
+     * @param Request $request
+     * @param string $id
+     * @return RedirectResponse
+     */
+    public function setUsageStatus(Request $request, string $id): RedirectResponse
+    {
+        $contentContactAction = new ContentContactAction();
+        $contentContactAction->setContentContactStatus($request->except('_token') + ['content_contact_id' => $id]);
+
+        return redirect()
+            ->route('admin.general.contact.content.index')
+            ->with('success', 'Status was Changed!');
+    }
+
+    /**
      * @param string $id
      * @return RedirectResponse
      */
