@@ -19,5 +19,9 @@ use App\Http\Controllers\LandingPage\Base\PageController;
 Route::get('/', [PageController::class, 'home'])->name('home');
 Route::get('/about', [PageController::class, 'about'])->name('about');
 
+// Services Route
+Route::get('/sea-air-service', [PageController::class, 'seaAir'])->name('sea-air');
+Route::get('/land-air-service', [PageController::class, 'landAir'])->name('land-air');
+
 // Admin Routes
 require __DIR__ . '/adm.php';

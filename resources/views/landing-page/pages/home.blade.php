@@ -190,7 +190,7 @@
                                         </li>
                                     </ul>
                                     <div class="tw-why-choose-left-bottom">
-                                        <a href="about-1.html" class="btn-half site-button"><span>Learn More</span><em></em></a>
+                                        <a href="{{ route('about') }}" class="btn-half site-button"><span>Learn More</span><em></em></a>
                                     </div>
                                 </div>
                             </div>

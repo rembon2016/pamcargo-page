@@ -42,8 +42,8 @@
                         </li>
                         <li class="has-child"><a href="javascript:;">Services</a>
                             <ul class="sub-menu">
-                                <li><a href="services-1.html">Sea Air Service</a></li>
-                                <li><a href="services-2.html">Land Air Service</a></li>
+                                <li><a href="{{ route('sea-air') }}">Sea Air Service</a></li>
+                                <li><a href="{{ route('land-air') }}">Land Air Service</a></li>
                             </ul>                                                                 
                         </li>
                         <li>

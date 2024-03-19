@@ -69,6 +69,106 @@ This files [Table of contents] are outlined below
 	.container,	.container-lg, .container-md,	.container-sm,	.container-xl {max-width: 1170px;}
 }
 
+.gap-10 {
+	gap: 15px;
+}
+
+.gap-x-10 {
+	column-gap: 15px;
+}
+
+.gap-y-10 {
+	row-gap: 15px;
+}
+
+.w-100 {
+	width: 100%;
+}
+
+.h-100 {
+	height: 100%;
+}
+
+.object-cover {
+	object-fit: cover;
+}
+
+.object-cover-center {
+	object-fit: cover;
+	object-position: center;
+}
+
+.object-contain {
+	object-fit: contain;
+}
+
+.object-contain-center {
+	object-fit: contain;
+	object-position: center;
+}
+
+
+.card-process {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	box-shadow: 0 0 15px rgba($color: #000000, $alpha: 0.15);
+	border: 1px solid #eaeaea;
+	transition: all .15s linear;
+	-webkit-transition: all .15s linear;
+	-moz-transition: all .15s linear;
+	-ms-transition: all .15s linear;
+	-o-transition: all .15s linear;
+	border-radius: 0 0 0 0;
+	-webkit-border-radius: 0 0 0 0;
+	-moz-border-radius: 0 0 0 0;
+	-ms-border-radius: 0 0 0 0;
+	-o-border-radius: 0 0 0 0;
+
+	.card-img {
+		display: grid;
+		place-items: center;
+		min-height: 100px;
+	}
+
+	.card-body {
+		width: 100%;
+		flex: none;
+		background-color: $clr-primary;
+		color: $clr-white;
+
+		h3 {
+			color: $clr-white;
+		}
+	}
+
+	.card-footer {
+		width: 100%;
+		height: 100%;
+	}
+
+	&:hover {
+		border-color: $clr-primary;
+	}
+}
+
+.benefit-card {
+	background-color: $clr-white;
+	box-shadow: 0 0 15px rgba($color: #000000, $alpha: 0.15);
+	border-left: 2px solid $clr-primary;
+	padding: 12.5px 15px;
+	transition: all .15s linear;
+	-webkit-transition: all .15s linear;
+	-moz-transition: all .15s linear;
+	-ms-transition: all .15s linear;
+	-o-transition: all .15s linear;
+
+	&:hover {
+		border-left-width: 4px;
+	}
+}
+
 // Default Class
 .text-highlight {
 	color: $clr-primary;
@@ -815,6 +915,9 @@ button{
 }
 
 /*Breadcrumb*/
+.wt-breadcrumb-white:before {
+	background-color: $clr-white !important;
+}
 .wt-breadcrumb{
 	margin: 0;
 	display: inline-block;
@@ -3412,7 +3515,7 @@ ol.comment-list {
 	width: 50%;
 	border-width:72px 72px 72px 0px;
 	border-style: solid;
-	border-color: #1e8fd0;
+	border-color: $clr-primary;
 	@include breakpoint_1199{
 		left: auto;
 		right: 0px;
@@ -3427,7 +3530,7 @@ ol.comment-list {
 		left: -60px;
 		width: 60px;
 		height: 72px;
-		background-color: #1e8fd0;
+		background-color: $clr-primary;
 		@include breakpoint_480{
 			display: none;
 		}
