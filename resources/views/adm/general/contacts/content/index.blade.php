@@ -83,7 +83,7 @@
                                                     </div>
                                                 </div>
                                             @else
-                                                <button class="btn btn-danger btn-sm" disabled>No Icon/Image</button>
+                                                <button class="btn btn-danger btn-sm" disabled>No Image/Icon</button>
                                             @endif
                                         </td>
                                         <td>{!! Utilities::decodeHtmlEntity($content->description) !!}</td>

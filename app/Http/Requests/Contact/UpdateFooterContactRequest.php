@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Http\Requests\Contact;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Support\Facades\Auth;
 
 class UpdateFooterContactRequest extends FormRequest
 {
@@ -13,7 +14,7 @@ class UpdateFooterContactRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        return Auth::check();
     }
 
     /**
@@ -22,27 +23,9 @@ class UpdateFooterContactRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
-        ];
-    }
-
-    /**
-     * @return array
-     */
-    public function messages()
-    {
-        return [
-            //
-        ];
-    }
-
-    /**
-     * @return array
-     */
-    public function attributes()
-    {
-        return [
-            //
+            'name' => ['required', 'string', 'max:255'],
+            'icon' => ['nullable', 'image'],
+            'description' => ['required', 'string'],
         ];
     }
 }

@@ -23,27 +23,9 @@ class AddFooterContactRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
-        ];
-    }
-
-    /**
-     * @return array
-     */
-    public function messages()
-    {
-        return [
-            //
-        ];
-    }
-
-    /**
-     * @return array
-     */
-    public function attributes()
-    {
-        return [
-            //
+            'name' => ['required', 'string', 'max:255'],
+            'icon' => ['nullable', 'image'],
+            'description' => ['required', 'string'],
         ];
     }
 }
