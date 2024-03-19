@@ -24,28 +24,30 @@
                         <input type="hidden" name="_method" value="{{ $actions['method'] }}">
 
                         <div class="form-group">
-                            <label for="head">Head <sup class="text-danger">*</sup></label>
+                            <label for="mark">Mark / Head <sup class="text-danger">*</sup></label>
                             <input
                                 type="text"
-                                class="form-control @error('head') is-invalid @enderror"
-                                name="head"
-                                id="head"
+                                class="form-control @error('mark') is-invalid @enderror"
+                                name="mark"
+                                id="mark"
+                                value="{{ old('mark', @$contentContact->mark) }}"
                                 required
                             >
-                            @error('head')
+                            @error('mark')
                                 <div class="invalid-feedback">
-                                    {{ $errors->first('head') }}
+                                    {{ $errors->first('mark') }}
                                 </div>
                             @enderror
                         </div>
 
                         <div class="form-group">
-                            <label for="head">Title <sup class="text-danger">*</sup></label>
+                            <label for="title">Title <sup class="text-danger">*</sup></label>
                             <input
                                 type="text"
                                 class="form-control @error('title') is-invalid @enderror"
                                 name="title"
                                 id="title"
+                                value="{{ old('title', @$contentContact->title) }}"
                                 required
                             >
                             @error('title')
@@ -56,13 +58,12 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="icon">Icon <sup class="text-danger">*</sup></label>
+                            <label for="icon">Icon / Image </label>
                             <input
-                                type="text"
+                                type="file"
                                 class="form-control @error('icon') is-invalid @enderror"
                                 name="icon"
                                 id="icon"
-                                required
                             >
                             @error('icon')
                                 <div class="invalid-feedback">
@@ -73,7 +74,7 @@
 
                         <div class="form-group">
                             <label for="description">Description <sup class="text-danger">*</sup></label>
-                            <textarea rows="10" class="form-control summernotes" data-placeholder="" name="description" required>{{ old('description') }}</textarea>
+                            <textarea rows="10" class="form-control summernotes" data-placeholder="" name="description" required>{{ old('description', @$contentContact->description) }}</textarea>
                             @error('description')
                                 <div class="invalid-feedback">
                                     {{ $errors->first('description') }}

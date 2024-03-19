@@ -34,4 +34,49 @@ class FooterContactController extends Controller
             'actions' => $actions,
         ]);
     }
+
+    /**
+     * @param Request $request
+     * @return RedirectResponse
+     */
+    public function store(Request $request): RedirectResponse
+    {
+        //
+    }
+
+    /**
+     * @param string $id
+     * @return View
+     */
+    public function edit(string $id): View
+    {
+        $actions = [
+            'url' => '',
+            'method' => '',
+            'act' => 'Update',
+        ];
+
+        return view('adm.general.contacts.footer.form', [
+            'actions' => $actions,
+        ]);
+    }
+
+    /**
+     * @param Request $request
+     * @param string $id
+     * @return RedirectResponse
+     */
+    public function update(Request $request, string $id): RedirectResponse
+    {
+        //
+    }
+
+    /**
+     * @param string $id
+     * @return RedirectResponse
+     */
+    public function delete(string $id): RedirectResponse
+    {
+        //
+    }
 }

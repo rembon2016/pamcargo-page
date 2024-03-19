@@ -40,7 +40,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="icon_image">Icon / Image <sup class="text-danger">*</sup></label>
+                            <label for="icon_image">Icon / Image </label>
                             <input
                                 type="file"
                                 class="form-control @error('icon_image') is-invalid @enderror"

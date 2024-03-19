@@ -163,6 +163,14 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['auth']], 
                     ->name('index');
                 Route::get('/create', [ContentContactController::class, 'create'])
                     ->name('create');
+                Route::post('/store', [ContentContactController::class, 'store'])
+                    ->name('store');
+                Route::get('/{id}/edit', [ContentContactController::class, 'edit'])
+                    ->name('edit');
+                Route::put('/{id}/update', [ContentContactController::class, 'update'])
+                    ->name('update');
+                Route::delete('/{id}/delete', [ContentContactController::class, 'delete'])
+                    ->name('delete');
             });
 
             // Footer Contact
@@ -171,6 +179,14 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['auth']], 
                     ->name('index');
                 Route::get('/create', [FooterContactController::class, 'create'])
                     ->name('create');
+                Route::post('/store', [FooterContactController::class, 'store'])
+                    ->name('store');
+                Route::get('/{id}/edit', [FooterContactController::class, 'edit'])
+                    ->name('edit');
+                Route::put('/{id}/update', [FooterContactController::class, 'update'])
+                    ->name('update');
+                Route::delete('/{id}/delete', [FooterContactController::class, 'delete'])
+                    ->name('delete');
             });
 
         });
