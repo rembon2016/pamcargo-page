@@ -38,7 +38,7 @@
                         <div class="services-etc m-b30">
                             <div class="service-category-title">
                                 <div class="service-category-media me-3">
-                                    <img src="@assets('images/icons/pic3.png')" alt="#">
+                                    <img src="@assets('images/icons/pic1.png')" alt="#">
                                 </div>
                                 <h2>Land Air Service</h2>
                             </div>

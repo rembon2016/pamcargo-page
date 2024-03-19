@@ -312,12 +312,12 @@
                                 <div class="col-lg-4 col-md-6 mb-4">
                                     <div class="service-box-style3">
                                         <div class="service-media">
-                                            <img src="@assets('images/icons/pic2.png')" alt="">
+                                            <img src="@assets('images/icons/pic3.png')" alt="">
                                         </div>
                                         <div class="service-content">
-                                            <h3 class="service-title-large"><span class="service-title-large-number">01</span><a href="services-detail.html">Sea Air</a></h3>
+                                            <h3 class="service-title-large"><span class="service-title-large-number">01</span><a href="{{ route('sea-air') }}">Sea Air</a></h3>
                                             <p>Our aim is to optimize and improve your supply chain so that we can give you the best service.</p>
-                                            <a href="services-detail.html" class="site-button-2">View Detail</a>
+                                            <a href="{{ route('sea-air') }}" class="site-button-2">View Detail</a>
                                         </div>
                                     </div>
                                 </div>
@@ -329,9 +329,9 @@
                                             <img src="@assets('images/icons/pic1.png')" alt="">
                                         </div>
                                         <div class="service-content">
-                                            <h3 class="service-title-large"><span class="service-title-large-number">02</span><a href="services-detail.html">Land Air</a></h3>
+                                            <h3 class="service-title-large"><span class="service-title-large-number">02</span><a href="{{ route('land-air') }}">Land Air</a></h3>
                                             <p>Our aim is to optimize and improve your supply chain so that we can give you the best service.</p>
-                                            <a href="services-detail.html" class="site-button-2">View Detail</a>
+                                            <a href="{{ route('land-air') }}" class="site-button-2">View Detail</a>
                                         </div>
                                     </div>
                                 </div>
@@ -586,8 +586,8 @@
                                     </div>
                                     <div class="project-new-content">
                                         <span class="project-new-category">Warehousing , Distrbution</span>	
-                                        <h4 class="wt-title"><a href="services-detail.html">Warehouse inventory</a></h4>
-                                        <a href="services-detail.html" class="site-button-h-align">Read More</a>
+                                        <h4 class="wt-title"><a href="{{ route('sea-air') }}">Warehouse inventory</a></h4>
+                                        <a href="{{ route('sea-air') }}" class="site-button-h-align">Read More</a>
                                     </div>
                                 </div>
                             </div>
@@ -605,8 +605,8 @@
                                     </div>
                                     <div class="project-new-content">
                                         <span class="project-new-category">Logistics, Analytics</span>	
-                                        <h4 class="wt-title"><a href="services-detail.html">Minimize Manufacturing</a></h4>
-                                        <a href="services-detail.html" class="site-button-h-align">Read More</a>
+                                        <h4 class="wt-title"><a href="{{ route('sea-air') }}">Minimize Manufacturing</a></h4>
+                                        <a href="{{ route('sea-air') }}" class="site-button-h-align">Read More</a>
                                     </div>
                                 </div>
                             </div>                    
@@ -624,8 +624,8 @@
                                     </div>
                                     <div class="project-new-content">
                                         <span class="project-new-category">Warehousing , Distrbution</span>	
-                                        <h4 class="wt-title"><a href="services-detail.html">Warehouse inventory</a></h4>
-                                        <a href="services-detail.html" class="site-button-h-align">Read More</a>
+                                        <h4 class="wt-title"><a href="{{ route('sea-air') }}">Warehouse inventory</a></h4>
+                                        <a href="{{ route('sea-air') }}" class="site-button-h-align">Read More</a>
                                     </div>
                                 </div>
                             </div> 
@@ -644,8 +644,8 @@
                                     </div>
                                     <div class="project-new-content">
                                         <span class="project-new-category">Warehousing , Distrbution</span>	
-                                        <h4 class="wt-title"><a href="services-detail.html">Warehouse inventory</a></h4>
-                                        <a href="services-detail.html" class="site-button-h-align">Read More</a>
+                                        <h4 class="wt-title"><a href="{{ route('sea-air') }}">Warehouse inventory</a></h4>
+                                        <a href="{{ route('sea-air') }}" class="site-button-h-align">Read More</a>
                                     </div>
                                 </div>
                             </div>
@@ -664,8 +664,8 @@
                                     </div>
                                     <div class="project-new-content">
                                         <span class="project-new-category">Logistics, Analytics</span>	
-                                        <h4 class="wt-title"><a href="services-detail.html">Minimize Manufacturing</a></h4>
-                                        <a href="services-detail.html" class="site-button-h-align">Read More</a>
+                                        <h4 class="wt-title"><a href="{{ route('sea-air') }}">Minimize Manufacturing</a></h4>
+                                        <a href="{{ route('sea-air') }}" class="site-button-h-align">Read More</a>
                                     </div>
                                 </div>
                             </div>  
@@ -684,8 +684,8 @@
                                     </div>
                                     <div class="project-new-content">
                                         <span class="project-new-category">Warehousing , Distrbution</span>	
-                                        <h4 class="wt-title"><a href="services-detail.html">Warehouse inventory</a></h4>
-                                        <a href="services-detail.html" class="site-button-h-align">Read More</a>
+                                        <h4 class="wt-title"><a href="{{ route('sea-air') }}">Warehouse inventory</a></h4>
+                                        <a href="{{ route('sea-air') }}" class="site-button-h-align">Read More</a>
                                     </div>
                                 </div>
                             </div> 
