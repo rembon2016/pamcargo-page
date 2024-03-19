@@ -199,6 +199,8 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['auth']], 
         Route::group(['prefix' => 'privacy-policy', 'as' => 'privacy_policy.'], function () {
             Route::get('/index', [PrivacyPolicyController::class, 'index'])
                 ->name('index');
+            Route::post('/index', [PrivacyPolicyController::class, 'createOrUpdate'])
+                ->name('save');
         });
 
         // Imprint

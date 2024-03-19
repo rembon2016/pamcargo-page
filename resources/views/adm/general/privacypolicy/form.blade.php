@@ -30,6 +30,7 @@
                                 class="form-control @error('title') is-invalid @enderror"
                                 name="title"
                                 id="title"
+                                value="{{ old('title', @$privacyPolicy->title) }}"
                                 required
                             >
                             @error('title')
@@ -41,10 +42,23 @@
 
                         <div class="form-group">
                             <label for="title">Description <sup class="text-danger">*</sup></label>
-                            <textarea rows="10" class="form-control summernotes" data-placeholder="" name="description" required>{{ old('description') }}</textarea>
+                            <textarea rows="10" class="form-control summernotes" data-placeholder="" name="description" required>{{ old('description', @$privacyPolicy->description) }}</textarea>
                             @error('title')
                                 <div class="invalid-feedback">
                                     {{ $errors->first('description') }}
+                                </div>
+                            @enderror
+                        </div>
+
+                        <div class="form-group">
+                            <label for="status">Status <sup class="text-danger">*</sup></label>
+                            <select name="status" id="status" class="form-control" required>
+                                <option value="1" @selected(old('status', @$privacyPolicy->is_active) == '1')>Active</option>
+                                <option value="0" @selected(old('status', @$privacyPolicy->is_active) == '0')>Inactive</option>
+                            </select>
+                            @error('status')
+                                <div class="invalid-feedback">
+                                    {{ $errors->first('status') }}
                                 </div>
                             @enderror
                         </div>
