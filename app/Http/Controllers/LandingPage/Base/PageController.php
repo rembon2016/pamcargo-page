@@ -30,4 +30,9 @@ class PageController extends Controller
     {
         return view('landing-page.pages.services.land-air');
     }
+
+    public function contact()
+    {
+        return view('landing-page.pages.contact');
+    }
 }

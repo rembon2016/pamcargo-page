@@ -35,7 +35,7 @@
                                 <li><a href="{{ route('about') }}">Offices</a></li>
                                 <li><a href="blog-grid.html">News</a></li>
                                 <li><a href="{{ route('about') }}">Imprint</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="{{ route('contact') }}">Contact</a></li>
                                 <li><a href="services-1.html">Rate Request</a></li>
                             </ul>
                         </div>
