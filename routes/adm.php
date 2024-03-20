@@ -240,6 +240,14 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['auth']], 
                 ->name('index');
             Route::get('/create', [UserController::class, 'create'])
                 ->name('create');
+            Route::post('/store', [UserController::class, 'store'])
+                ->name('store');
+            Route::get('/{id}/edit', [UserController::class, 'edit'])
+                ->name('edit');
+            Route::put('/{id}/update', [UserController::class, 'update'])
+                ->name('update');
+            Route::delete('/{id}/delete', [UserController::class, 'delete'])
+                ->name('delete');
         });
 
         // News

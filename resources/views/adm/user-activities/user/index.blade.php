@@ -25,26 +25,40 @@
                             <thead>
                                 <tr>
                                     <th>#</th>
-                                    <th>Col 1</th>
-                                    <th>Col 2</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Role</th>
                                     <th>Actions?</th>
                                 </tr>
                             </thead>
                             <tfoot>
                                 <tr>
                                     <th>#</th>
-                                    <th>Col 1</th>
-                                    <th>Col 2</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Role</th>
                                     <th>Actions?</th>
                                 </tr>
                             </tfoot>
                             <tbody>
-                                <tr>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                </tr>
+                                @foreach($users as $user)
+                                    <tr>
+                                        <td>{{ $loop->iteration }}</td>
+                                        <td>{{ $user->name }}</td>
+                                        <td>{{ $user->email }}</td>
+                                        <td>
+                                            <span class="badge badge-primary badge-sm">
+                                                {{ $user->role->name }}
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <a href="{{ route('admin.ua.user.edit', $user->id) }}" class="btn btn-success btn-sm">
+                                                <i class="fa fa-edit"></i>
+                                            </a>
+                                            <x-delete-btn :url="route('admin.ua.user.delete', $user->id)" />
+                                        </td>
+                                    </tr>
+                                @endforeach
                             </tbody>
                         </table>
                     </div>

@@ -30,6 +30,7 @@
                                 class="form-control @error('name') is-invalid @enderror"
                                 name="name"
                                 id="name"
+                                value="{{ old('name', @$user->name) }}"
                                 required
                             >
                             @error('name')
@@ -46,6 +47,7 @@
                                 class="form-control @error('email') is-invalid @enderror"
                                 name="email"
                                 id="email"
+                                value="{{ old('email', @$user->email) }}"
                                 required
                             >
                             @error('email')
@@ -56,27 +58,36 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="user_type">User Type <sup class="text-danger">*</sup></label>
-                            <select name="user_type" id="user_type" class="form-control @error('user_type') is-invalid @enderror">
+                            <label for="role_id">User Type <sup class="text-danger">*</sup></label>
+                            <select name="role_id" id="role_id" class="form-control @error('role_id') is-invalid @enderror">
                                 <option value="" selected hidden></option>
-                                <option value="">User News</option>
-                                <option value="">User Uploader</option>
+                                @foreach($roles as $role)
+                                    <option value="{{ $role->id }}" @selected(old('role_id', @$user->role_id) == $role->id)>
+                                        {{ $role->name }}
+                                    </option>
+                                @endforeach
                             </select>
-                            @error('user_type')
+                            @error('role_id')
                                 <div class="invalid-feedback">
-                                    {{ $errors->first('user_type') }}
+                                    {{ $errors->first('role_id') }}
                                 </div>
                             @enderror
                         </div>
 
                         <div class="form-group">
-                            <label for="password">Password <sup class="text-danger">*</sup></label>
+                            <label for="password">
+                                @if (@$user)
+                                    New Password
+                                @else
+                                    Password <sup class="text-danger">*</sup>
+                                @endif
+                            </label>
                             <input
                                 type="password"
                                 class="form-control @error('password') is-invalid @enderror"
                                 name="password"
                                 id="password"
-                                required
+                                {{ @$user ? '' : 'required' }}
                             >
                             @error('password')
                                 <div class="invalid-feedback">
@@ -87,7 +98,7 @@
 
                         <div class="form-group">
                             <label for="address">Address</label>
-                            <textarea rows="10" class="form-control summernotes" data-placeholder="5230 Penfield Ave, California State University, Los Angeles" name="address" required>{{ old('address') }}</textarea>
+                            <textarea rows="10" class="form-control summernotes" data-placeholder="5230 Penfield Ave, California State University, Los Angeles" name="address">{{ old('address', @$user->address) }}</textarea>
                             @error('address')
                                 <div class="invalid-feedback">
                                     {{ $errors->first('address') }}
