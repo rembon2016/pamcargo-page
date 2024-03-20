@@ -123,19 +123,18 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script>
+        const data = JSON.parse('{!! json_encode($yearly_visitor_chart) !!}')
         new Chart(
             document.getElementById('visitor-chart'), {
                 type: 'bar',
                 data: {
-                    labels: ['Jan'],
+                    labels: data.map(row => row.month),
                     datasets: [{
-                            label: 'Visitors',
-                            fill: false,
-                            data: [20],
-                            backgroundColor: '#50C4ED',
-                            borderColor: '#50C4ED'
-                        }
-                    ]
+                        label: 'Grafik Pengunjung Tahunan',
+                        data: data.map(row => row.count),
+                        backgroundColor: '#1cc88a',
+                        borderColor: '#1cc88a'
+                    }]
                 }
             }
         );

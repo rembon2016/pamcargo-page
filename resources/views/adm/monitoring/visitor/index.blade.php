@@ -25,26 +25,37 @@
                             <thead>
                                 <tr>
                                     <th>#</th>
-                                    <th>Col 1</th>
-                                    <th>Col 2</th>
-                                    <th>Actions?</th>
+                                    <th>Session</th>
+                                    <th>Ip</th>
+                                    <th>Status Code</th>
+                                    <th>Access Datetime</th>
                                 </tr>
                             </thead>
                             <tfoot>
                                 <tr>
                                     <th>#</th>
-                                    <th>Col 1</th>
-                                    <th>Col 2</th>
-                                    <th>Actions?</th>
+                                    <th>Session</th>
+                                    <th>Ip</th>
+                                    <th>Status Code</th>
+                                    <th>Access Datetime</th>
                                 </tr>
                             </tfoot>
                             <tbody>
-                                <tr>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                </tr>
+                                @foreach($visitors as $visitor)
+                                    <tr>
+                                        <td>{{ $loop->iteration }}</td>
+                                        <td>{{ $visitor->session_id }}</td>
+                                        <td>{{ $visitor->ip }}</td>
+                                        <td>
+                                            @if(str_contains($visitor->status_code, '2'))
+                                                <span class="badge badge-success badge-sm">{{ $visitor->status_code }}</span>
+                                            @else
+                                                <span class="badge badge-warning badge-sm">{{ $visitor->status_code }}</span>
+                                            @endif
+                                        </td>
+                                        <td>{{ $visitor->created_at }}</td>
+                                    </tr>
+                                @endforeach
                             </tbody>
                         </table>
                     </div>
