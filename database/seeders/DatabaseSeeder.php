@@ -25,5 +25,8 @@ class DatabaseSeeder extends Seeder
             'email_verified_at' => now(),
             'role_id' => $adminRole->id,
         ]);
+
+        // Country Seeder
+        $this->call(CountrySeeder::class);
     }
 }
