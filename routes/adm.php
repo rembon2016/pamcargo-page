@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Adm\DashboardController;
 use App\Http\Controllers\Adm\Auth\LoginController;
 use App\Http\Controllers\Adm\Auth\LogoutController;
+use App\Http\Controllers\Adm\Setting\RoleController;
 use App\Http\Controllers\Adm\General\SliderController;
 use App\Http\Controllers\Adm\General\WidgetController;
 use App\Http\Controllers\Adm\General\ImprintController;
@@ -283,6 +284,27 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['auth']], 
         Route::group(['prefix' => 'customer-message', 'as' => 'customer_message.'], function () {
             Route::get('/', [CustomerMessageController::class, 'index'])
                 ->name('index');
+        });
+
+    });
+
+    // Settings
+    Route::group(['prefix' => 'setting', 'as' => 'setting.'], function () {
+
+        // Role Setting
+        Route::group(['prefix' => 'role', 'as' => 'role.'], function () {
+            Route::get('/', [RoleController::class, 'index'])
+                ->name('index');
+            Route::get('/create', [RoleController::class, 'create'])
+                ->name('create');
+            Route::post('/store', [RoleController::class, 'store'])
+                ->name('store');
+            Route::get('/{id}/edit', [RoleController::class, 'edit'])
+                ->name('edit');
+            Route::put('/{id}/update', [RoleController::class, 'update'])
+                ->name('update');
+            Route::delete('/{id}/delete', [RoleController::class, 'delete'])
+                ->name('delete');
         });
 
     });

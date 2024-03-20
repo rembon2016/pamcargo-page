@@ -33,13 +33,6 @@
             <span>Visitor Log</span></a>
     </li>
 
-    <!-- Nav Item - System Log -->
-    <li class="nav-item {{ Utilities::activateIfRouteIs('admin.monitoring.system.*') }}">
-        <a class="nav-link" href="{{ route('admin.monitoring.system.index') }}">
-            <i class="fas fa-desktop"></i>
-            <span>System Log</span></a>
-    </li>
-
     <!-- Divider -->
     <hr class="sidebar-divider">
 
@@ -225,6 +218,21 @@
         <a class="nav-link" href="{{ route('admin.ua.customer_message.index') }}">
             <i class="fas fa-envelope"></i>
             <span>Customer Message</span></a>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+
+    <!-- Heading -->
+    <div class="sidebar-heading">
+        Settings
+    </div>
+
+    <!-- Nav Item - Role Setting -->
+    <li class="nav-item {{ Utilities::activateIfRouteIs('admin.setting.role.*') }}">
+        <a class="nav-link" href="{{ route('admin.setting.role.index') }}">
+            <i class="fas fa-user"></i>
+            <span>Role Setting</span></a>
     </li>
 
 </ul>
