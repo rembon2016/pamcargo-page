@@ -14,11 +14,16 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+        $adminRole = \App\Models\Role::create([
+            'name' => 'admin'
+        ]);
+
         \App\Models\User::create([
             'name' => 'Admin',
             'email' => 'admin@pamcargo.com',
             'password' => 'password',
             'email_verified_at' => now(),
+            'role_id' => $adminRole->id,
         ]);
     }
 }
