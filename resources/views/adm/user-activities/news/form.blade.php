@@ -30,6 +30,7 @@
                                 class="form-control @error('title') is-invalid @enderror"
                                 name="title"
                                 id="title"
+                                value="{{ old('title', @$news->title) }}"
                                 required
                             >
                             @error('title')
@@ -40,41 +41,48 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="caption_thumbnail">Caption Thumbnail <sup class="text-danger">*</sup></label>
+                            <label for="caption">Caption Thumbnail <sup class="text-danger">*</sup></label>
                             <input
                                 type="text"
-                                class="form-control @error('caption_thumbnail') is-invalid @enderror"
-                                name="caption_thumbnail"
-                                id="caption_thumbnail"
+                                class="form-control @error('caption') is-invalid @enderror"
+                                name="caption"
+                                id="caption"
+                                value="{{ old('caption', @$news->caption) }}"
                                 required
                             >
-                            @error('caption_thumbnail')
+                            @error('caption')
                                 <div class="invalid-feedback">
-                                    {{ $errors->first('caption_thumbnail') }}
+                                    {{ $errors->first('caption') }}
                                 </div>
                             @enderror
                         </div>
 
                         <div class="form-group">
-                            <label for="image">Image <sup class="text-danger">*</sup></label>
+                            <label for="image_files">
+                                @if(@$news)
+                                    Images <sup class="text-danger">(able to input more than 1 image)</sup>
+                                @else
+                                    Images <sup class="text-danger">* (able to input more than 1 image)</sup>
+                                @endif
+                            </label>
                             <input
                                 type="file"
-                                class="form-control @error('image') is-invalid @enderror"
-                                name="image"
-                                id="image"
+                                class="form-control @error('image_files') is-invalid @enderror"
+                                name="image_files[]"
+                                id="image_files"
                                 multiple
-                                required
+                                {{ @$news ? '' : 'required' }}
                             >
-                            @error('image')
+                            @error('image_files')
                                 <div class="invalid-feedback">
-                                    {{ $errors->first('image') }}
+                                    {{ $errors->first('image_files') }}
                                 </div>
                             @enderror
                         </div>
 
                         <div class="form-group">
-                            <label for="description">description</label>
-                            <textarea rows="10" class="form-control summernotes" data-placeholder="" name="description" required>{{ old('description') }}</textarea>
+                            <label for="description">Description <sup class="text-danger">*</sup></label>
+                            <textarea rows="10" class="form-control summernotes" data-placeholder="" name="description" required>{{ old('description', @$news->description) }}</textarea>
                             @error('description')
                                 <div class="invalid-feedback">
                                     {{ $errors->first('description') }}

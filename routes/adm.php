@@ -256,6 +256,14 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['auth']], 
                 ->name('index');
             Route::get('/create', [NewsController::class, 'create'])
                 ->name('create');
+            Route::post('/store', [NewsController::class, 'store'])
+                ->name('store');
+            Route::get('/{id}/edit', [NewsController::class, 'edit'])
+                ->name('edit');
+            Route::put('/{id}/update', [NewsController::class, 'update'])
+                ->name('update');
+            Route::delete('/{id}/delete', [NewsController::class, 'delete'])
+                ->name('delete');
         });
 
         // Office
