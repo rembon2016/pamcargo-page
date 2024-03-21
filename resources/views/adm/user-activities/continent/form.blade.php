@@ -30,6 +30,7 @@
                                 class="form-control @error('region') is-invalid @enderror"
                                 name="region"
                                 id="region"
+                                value="{{ old('region', @$continent->region) }}"
                                 required
                             >
                             @error('region')
@@ -41,7 +42,7 @@
 
                         <div class="form-group">
                             <label for="description">Description <sup class="text-danger">*</sup></label>
-                            <textarea rows="10" class="form-control summernotes" data-placeholder="" name="description" required>{{ old('description') }}</textarea>
+                            <textarea rows="10" class="form-control summernotes" data-placeholder="" name="description" required>{{ old('description', @$continent->description) }}</textarea>
                             @error('description')
                                 <div class="invalid-feedback">
                                     {{ $errors->first('description') }}

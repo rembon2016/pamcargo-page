@@ -294,6 +294,14 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['auth']], 
                 ->name('index');
             Route::get('/create', [ContinentController::class, 'create'])
                 ->name('create');
+            Route::post('/store', [ContinentController::class, 'store'])
+                ->name('store');
+            Route::get('/{id}/edit', [ContinentController::class, 'edit'])
+                ->name('edit');
+            Route::put('/{id}/update', [ContinentController::class, 'update'])
+                ->name('update');
+            Route::delete('/{id}/delete', [ContinentController::class, 'delete'])
+                ->name('delete');
         });
 
         // Continent
