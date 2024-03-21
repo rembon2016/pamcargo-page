@@ -1,6 +1,7 @@
-# Silahkan Lihat" Artefak Berikut ini:
+# Silahkan Lihat" Pria tampan, Kece dan Perkasa:
 <p align="center">
-    <a href="https://solo.suaramerdeka.com/nasional/pr-053948243/roy-suryo-ditetapkan-sebagai-tersangka-meme-stupa-candi-borobudur-mirip-jokowi" target="_blank">
-        <img src="https://static.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/2022/07/22/2305148234.jpg" width="100%" alt="Roy Suryo Sang kakala">
-    </a>
+    <img src="https://github.com/dayCod/chatio/blob/master/tegar_ganteng_1.jpg" width="100%" alt="Tegars">
+    <img src="https://github.com/dayCod/chatio/blob/master/Screenshot%202024-03-21%20110735.png" width="100%" alt="The Marbots">
+    <img src="https://github.com/dayCod/chatio/blob/master/tegar_ganteng_2.png" width="100%" alt="The Marbots">
+    <img src="https://github.com/dayCod/chatio/blob/master/tegar_ganteng_3.png" width="100%" alt="The Marbots">
 </p>
