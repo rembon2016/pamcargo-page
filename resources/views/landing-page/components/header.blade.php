@@ -50,7 +50,7 @@
                             <a href="{{ route('rate-request') }}">Rate Request</a>
                         </li>
                         <li>
-                            <a href="{{ route('home') }}">News</a>
+                            <a href="{{ route('news.index') }}">News</a>
                         </li>
                         <li>
                             <a href="{{ route('contact') }}">Contact</a>

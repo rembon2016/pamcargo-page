@@ -55,4 +55,14 @@ class PageController extends Controller
     {
         return view('landing-page.pages.privacy-policy');
     }
+
+    public function news()
+    {
+        return view('landing-page.pages.news.index');
+    }
+
+    public function newsDetail()
+    {
+        return view('landing-page.pages.news.detail');
+    }
 }

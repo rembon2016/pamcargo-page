@@ -23,6 +23,8 @@ Route::get('/about', [PageController::class, 'about'])->name('about');
 Route::get('/contact', [PageController::class, 'contact'])->name('contact');
 Route::get('/rate-request', [PageController::class, 'rateRequest'])->name('rate-request');
 Route::get('/imprint', [PageController::class, 'imprint'])->name('imprint');
+Route::get('/news', [PageController::class, 'news'])->name('news.index');
+Route::get('/news/detail', [PageController::class, 'newsDetail'])->name('news.detail');
 
 // Services Route
 Route::get('/sea-air-service', [PageController::class, 'seaAir'])->name('sea-air');
