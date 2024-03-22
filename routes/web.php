@@ -27,5 +27,9 @@ Route::get('/rate-request', [PageController::class, 'rateRequest'])->name('rate-
 Route::get('/sea-air-service', [PageController::class, 'seaAir'])->name('sea-air');
 Route::get('/land-air-service', [PageController::class, 'landAir'])->name('land-air');
 
+// Other Route
+Route::get('/faq', [PageController::class, 'faq'])->name('faq');
+Route::get('/privacy-policy', [PageController::class, 'privacyPolicy'])->name('privacy-policy');
+
 // Admin Routes
 require __DIR__ . '/adm.php';

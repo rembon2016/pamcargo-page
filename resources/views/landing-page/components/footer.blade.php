@@ -55,8 +55,8 @@
                         <div class="widget widget_services ftr-list-center">
                             <h3 class="widget-title">Other</h3>
                             <ul>
-                                <li><a href="about-1.html">FAQ</a></li>
-                                <li><a href="about-1.html">Privacy Policy</a></li>
+                                <li><a href="{{ route('faq') }}">FAQ</a></li>
+                                <li><a href="{{ route('privacy-policy') }}">Privacy Policy</a></li>
                             </ul>
                         </div>
                     </div> 

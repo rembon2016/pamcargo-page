@@ -40,4 +40,14 @@ class PageController extends Controller
     {
         return view('landing-page.pages.rate-request');
     }
+
+    public function faq()
+    {
+        return view('landing-page.pages.faq');
+    }
+
+    public function privacyPolicy()
+    {
+        return view('landing-page.pages.privacy-policy');
+    }
 }
