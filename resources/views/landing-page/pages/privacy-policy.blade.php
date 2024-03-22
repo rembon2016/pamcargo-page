@@ -36,12 +36,14 @@
                 <div class="wt-small-separator site-text-primary">
                     <div>Privacy Policy</div>                                
                 </div>
-                <h2 class="wt-title">Our Privacy Policy</h2>
+                <h2 class="wt-title">Data Protection Declaration</h2>
             </div>                  
             <!-- TITLE END-->
 
             <div class="section-content text-center">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, impedit facere corporis, praesentium sapiente exercitationem possimus nihil assumenda provident saepe error culpa distinctio nemo odio eaque. Sint eum minus, optio architecto fugiat commodi placeat, doloribus unde labore cumque iusto quam laborum veniam ipsam iure ex et voluptas quaerat molestiae aspernatur illum velit rerum. Nemo doloremque in quis quo amet, repellat, ducimus eos eum nobis inventore consectetur, nihil similique eveniet tenetur neque quaerat? Aspernatur officiis quam nulla eligendi, officia totam dolorum possimus. Voluptas reiciendis minus officiis odit sunt quos facilis iure aspernatur doloribus dolorum eum soluta, fugiat veritatis ad corrupti veniam!</p>
+                <p>
+                    PAM INTERNATIONAL (LLC) would like to point out that personal data is stored exclusively within the framework of the execution of the contract and with the receipt of the order. We are entitled to process and use the inventory data of our customers insofar as this is necessary for advising the customers, for the execution of the contract and for the demand-oriented design of services. Upon request, the customer will be provided at any time with complete and free information about the stored data, insofar as it concerns him, and the storage can be objected to at any time. The collection, processing and use of personal data is carried out exclusively in compliance with the applicable data protection regulations (EU GDPR and German DSGVO).
+                </p>
             </div>
         </div>
     </div>
