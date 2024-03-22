@@ -22,6 +22,7 @@ Route::get('/', [PageController::class, 'home'])
 Route::get('/about', [PageController::class, 'about'])->name('about');
 Route::get('/contact', [PageController::class, 'contact'])->name('contact');
 Route::get('/rate-request', [PageController::class, 'rateRequest'])->name('rate-request');
+Route::get('/imprint', [PageController::class, 'imprint'])->name('imprint');
 
 // Services Route
 Route::get('/sea-air-service', [PageController::class, 'seaAir'])->name('sea-air');
