@@ -33,8 +33,8 @@
                             <ul>
                                 <li><a href="{{ route('about') }}">About</a></li>
                                 <li><a href="{{ route('about') }}">Offices</a></li>
-                                <li><a href="blog-grid.html">News</a></li>
-                                <li><a href="{{ route('about') }}">Imprint</a></li>
+                                <li><a href="{{ route('news.index') }}">News</a></li>
+                                <li><a href="{{ route('imprint') }}">Imprint</a></li>
                                 <li><a href="{{ route('contact') }}">Contact</a></li>
                                 <li><a href="{{ route('rate-request') }}">Rate Request</a></li>
                             </ul>
@@ -55,8 +55,8 @@
                         <div class="widget widget_services ftr-list-center">
                             <h3 class="widget-title">Other</h3>
                             <ul>
-                                <li><a href="about-1.html">FAQ</a></li>
-                                <li><a href="about-1.html">Privacy Policy</a></li>
+                                <li><a href="{{ route('faq') }}">FAQ</a></li>
+                                <li><a href="{{ route('privacy-policy') }}">Privacy Policy</a></li>
                             </ul>
                         </div>
                     </div> 

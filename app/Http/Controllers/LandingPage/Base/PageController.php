@@ -40,4 +40,29 @@ class PageController extends Controller
     {
         return view('landing-page.pages.rate-request');
     }
+
+    public function imprint()
+    {
+        return view('landing-page.pages.imprint');
+    }
+
+    public function faq()
+    {
+        return view('landing-page.pages.faq');
+    }
+
+    public function privacyPolicy()
+    {
+        return view('landing-page.pages.privacy-policy');
+    }
+
+    public function news()
+    {
+        return view('landing-page.pages.news.index');
+    }
+
+    public function newsDetail()
+    {
+        return view('landing-page.pages.news.detail');
+    }
 }
