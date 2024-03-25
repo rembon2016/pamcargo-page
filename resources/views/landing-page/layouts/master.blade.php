@@ -45,9 +45,9 @@
     <link rel="stylesheet" type="text/css" href="@assets('css/custom.css')">
 
     <!-- REVOLUTION SLIDER CSS -->
-    <link rel="stylesheet" type="text/css" href="@assets('plugins/revolution/revolution/css/settings.css')">
+    {{-- <link rel="stylesheet" type="text/css" href="@assets('plugins/revolution/revolution/css/settings.css')">
     <!-- REVOLUTION NAVIGATION STYLE -->
-    <link rel="stylesheet" type="text/css" href="@assets('plugins/revolution/revolution/css/navigation.css')">
+    <link rel="stylesheet" type="text/css" href="@assets('plugins/revolution/revolution/css/navigation.css')"> --}}
     
     @stack('head')
 </head>
@@ -101,7 +101,7 @@
 <script src="@assets('js/main.js')"></script><!-- CUSTOM FUCTIONS  -->
 
 <!-- REVOLUTION JS FILES -->
-
+{{-- 
 <script src="@assets('plugins/revolution/revolution/js/jquery.themepunch.tools.min.js')"></script>
 <script src="@assets('plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js')"></script>
 
@@ -109,7 +109,7 @@
 <script src="@assets('plugins/revolution/revolution/js/extensions/revolution-plugin.js')"></script>
 
 <!-- REVOLUTION SLIDER SCRIPT FILES -->
-<script src="@assets('js/rev-script-1.js')"></script>
+<script src="@assets('js/rev-script-1.js')"></script> --}}
 
 @stack('script')
 

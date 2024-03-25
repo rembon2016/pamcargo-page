@@ -67,7 +67,7 @@
                                                         </div>
                                                         <div class="modal-body">
                                                             <img src="{{ $slider->image_url }}" class="img-thumbnail"
-                                                                alt="{{ $slider->title }}" style="width: 100%; height: 300px;" />
+                                                                alt="{{ $slider->title }}" style="width: 100%; height: 300px; object-fit: cover;" />
                                                         </div>
                                                         <div class="modal-footer">
                                                             <button type="button" class="btn btn-secondary"

@@ -1,0 +1,36 @@
+version: "3.8"
+services:
+  app:
+    container_name: compro_pam_container
+    restart: unless-stopped
+    build:
+      context: ./
+      dockerfile: ./docker/app.dockerfile
+    volumes:
+      - ./:/var/www/app
+      - vendor_volume:/var/www/app/vendor
+    networks:
+      - php_network
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  nginx:
+    container_name: nginx_compro_pam_container
+    image: nginx:1.19-alpine
+    restart: unless-stopped
+    ports:
+      - "${NGINX_PORT_FORWARD:-8901}:80"
+    volumes:
+      - ./:/var/www/app
+      - ./docker/nginx.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - app
+    networks:
+      - php_network
+
+networks:
+  php_network:
+    driver: bridge
+
+volumes:
+  vendor_volume:

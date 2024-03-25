@@ -57,6 +57,7 @@
                                 class="form-control @error('image_file') is-invalid @enderror"
                                 name="image_file"
                                 id="image_file"
+                                accept="image/*"
                             >
                             @error('image_file')
                                 <div class="invalid-feedback">
