@@ -288,6 +288,14 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['auth']], 
                 ->name('index');
             Route::get('/create', [AgentController::class, 'create'])
                 ->name('create');
+            Route::post('/store', [AgentController::class, 'store'])
+                ->name('store');
+            Route::get('/{id}/edit', [AgentController::class, 'edit'])
+                ->name('edit');
+            Route::put('/{id}/update', [AgentController::class, 'update'])
+                ->name('update');
+            Route::delete('/{id}/delete', [AgentController::class, 'delete'])
+                ->name('delete');
         });
 
         // Rate Request

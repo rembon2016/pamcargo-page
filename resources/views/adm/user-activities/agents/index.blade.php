@@ -25,26 +25,34 @@
                             <thead>
                                 <tr>
                                     <th>#</th>
-                                    <th>Col 1</th>
-                                    <th>Col 2</th>
+                                    <th>Title</th>
+                                    <th>Description</th>
                                     <th>Actions?</th>
                                 </tr>
                             </thead>
                             <tfoot>
                                 <tr>
                                     <th>#</th>
-                                    <th>Col 1</th>
-                                    <th>Col 2</th>
+                                    <th>Title</th>
+                                    <th>Description</th>
                                     <th>Actions?</th>
                                 </tr>
                             </tfoot>
                             <tbody>
-                                <tr>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                </tr>
+                                @foreach($agents as $agent)
+                                    <tr>
+                                        <td>{{ $loop->iteration }}</td>
+                                        <td>{{ $agent->title }}</td>
+                                        <td>{!! Utilities::decodeHtmlEntity($agent->description) !!}</td>
+                                        <td>
+                                            <a href="{{ route('admin.ua.agent.edit', $agent->id) }}"
+                                                class="btn btn-success btn-sm">
+                                                <i class="fa fa-edit"></i>
+                                            </a>
+                                            <x-delete-btn :url="route('admin.ua.agent.delete', $agent->id)" />
+                                        </td>
+                                    </tr>
+                                @endforeach
                             </tbody>
                         </table>
                     </div>
