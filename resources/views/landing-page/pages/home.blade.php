@@ -7,7 +7,7 @@
     <div class="page-content">
 
         <!-- SLIDER START --> 
-        <div class="slider-outer">
+        {{-- <div class="slider-outer">
         
             <div id="welcome_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="goodnews-header" data-source="gallery" style="background:#eeeeee;padding:0px;">
                 <div id="webmax-two" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.3.1">
@@ -124,8 +124,129 @@
                 </div>
             </div>
     
-        </div>
+        </div> --}}
         <!-- SLIDER END -->
+
+        <!-- Swiper -->
+        <div class="twm-slider2-wrap">
+
+            <!-- Swiper -->
+            <div class="swiper twm-slider2">
+                <div class="swiper-wrapper">
+                    @forelse($sliders as $slider)
+                        <!--Slide One -->
+                        <div class="swiper-slide bg-cover dark-overlay" style="background-image:url('{{ $slider->image_url }}'); background-color: #fff;">
+                            <div class="h-banner-wrap">
+                                <div class="h-banner-left">
+                                    <div class="h-bnr-top">
+                                        <h2>
+                                            <span class="title-outline">{{ $slider->title }}</span>
+                                        </h2>
+                                        <p>{!! $slider->description !!}</p>
+                                        <a href="{{ route('sea-air') }}" class="h-bnr-btn">View Services</a>
+                                    </div>
+
+                                </div>
+                                
+                                <div class="cross-line-box left up-down"><img src="@assets('images/main-slider/slider1/cross-line-box.png')" alt="#"></div>
+                                <div class="cross-line-box right up-down"><img src="@assets('images/main-slider/slider1/cross-line-box.png')" alt="#"></div>
+                                <div class="circle-left-top zoon-in-out"></div>
+                            </div>
+                        </div>
+                        @empty  
+                        <!--Slide One -->
+                        <div class="swiper-slide bg-cover" style="background-image:url(@assets('images/main-slider/slider1/bg-large.jpg'));">
+                            <div class="h-banner-wrap">
+                                <div class="h-banner-left">
+                                    <div class="h-bnr-top">
+                                        <h2>
+                                            <span class="title-outline">Slider 1</span>
+                                        </h2>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, sequi!</p>
+                                        <a href="{{ route('sea-air') }}" class="h-bnr-btn">View Services</a>
+                                    </div>
+
+                                </div>
+                                
+                                <div class="cross-line-box left up-down"><img src="@assets('images/main-slider/slider1/cross-line-box.png')" alt="#"></div>
+                                <div class="cross-line-box right up-down"><img src="@assets('images/main-slider/slider1/cross-line-box.png')" alt="#"></div>
+                                <div class="circle-left-top zoon-in-out"></div>
+                            </div>
+                        </div>
+
+                        <!--Slide One -->
+                        <div class="swiper-slide bg-cover" style="background-image:url(@assets('images/main-slider/slider1/bg-large.jpg'));">
+                            <div class="h-banner-wrap">
+                                <div class="h-banner-left">
+                                    <div class="h-bnr-top">
+                                        <h2>
+                                            <span class="title-outline">Slider 2</span>
+                                        </h2>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, sequi!</p>
+                                        <a href="{{ route('sea-air') }}" class="h-bnr-btn">View Services</a>
+                                    </div>
+
+                                </div>
+                                
+                                <div class="cross-line-box left up-down"><img src="@assets('images/main-slider/slider1/cross-line-box.png')" alt="#"></div>
+                                <div class="cross-line-box right up-down"><img src="@assets('images/main-slider/slider1/cross-line-box.png')" alt="#"></div>
+                                <div class="circle-left-top zoon-in-out"></div>
+                            </div>
+                        </div>
+                    @endforelse
+
+                    {{-- <!--Slide Two -->
+                    <div class="swiper-slide bg-cover" style="background-image:url(@assets('images/main-slider/slider1/bg-large2.jpg'));">
+                        <div class="h-banner-wrap">
+                            <div class="h-banner-left">
+                                <div class="h-bnr-top">
+                                    <h2>
+                                        <span class="title-outline">To Every</span>
+                                        Direction
+                                    </h2>
+                                    <p>There are many variations of passages of worem Ipsum available, but the majority</p>
+                                    <a href="services-1.html" class="h-bnr-btn">View Services</a>
+                                </div>
+
+                            </div>
+                            
+                            <div class="cross-line-box left up-down"><img src="@assets('images/main-slider/slider1/cross-line-box.png')" alt="#"></div>
+                            <div class="cross-line-box right up-down"><img src="@assets('images/main-slider/slider1/cross-line-box.png')" alt="#"></div>
+                            <div class="circle-left-top zoon-in-out"></div>
+                        </div>
+                    </div>
+
+                    <!--Slide Three -->
+                    <div class="swiper-slide bg-cover" style="background-image:url(@assets('images/main-slider/slider1/bg-large3.jpg'));">
+                        <div class="h-banner-wrap">
+                            <div class="h-banner-left">
+                                <div class="h-bnr-top">
+                                    <h2>
+                                        <span class="title-outline">Ready</span>
+                                        To Move
+                                    </h2>
+                                    <p>There are many variations of passages of worem Ipsum available, but the majority</p>
+                                    <a href="services-1.html" class="h-bnr-btn">View Services</a>
+                                </div>
+
+                            </div>
+                            
+                            <div class="cross-line-box left up-down"><img src="@assets('images/main-slider/slider1/cross-line-box.png')" alt="#"></div>
+                            <div class="cross-line-box right up-down"><img src="@assets('images/main-slider/slider1/cross-line-box.png')" alt="#"></div>
+                            <div class="circle-left-top zoon-in-out"></div>
+                        </div>
+                    </div> --}}
+
+                </div>
+                <!-- navigation Numbers -->
+                <div class="swiper-pagination"></div>
+                <!-- navigation Arrow -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            
+        </div>
+        <!-- Swiper -->
 
         <!-- WHY CHOOSE US SECTION START -->
         <div class="section-full p-t120 p-b90 site-bg-gray-light tw-why-choose-area2">
@@ -345,7 +466,7 @@
         <!-- SERVICES SECTION END -->
 
         <!-- TESTIMONIALS SECTION START -->
-        <div class="section-full bg-cover p-t120 p-b120 bg-cover tw-testimonial-2-area" style="background-image:url(images/background/bg-6.jpg);">
+        <div class="section-full bg-cover p-t120 p-b120 bg-cover tw-testimonial-2-area">
             <!-- TITLE START-->
             <div class="section-head center wt-small-separator-outer">
                 <div class="wt-small-separator site-text-primary">
