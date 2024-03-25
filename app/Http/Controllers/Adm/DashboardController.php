@@ -10,6 +10,8 @@ use App\Models\WebVisitor;
 use Illuminate\Http\Request;
 use Illuminate\Contracts\View\View;
 use App\Http\Controllers\Controller;
+use App\Models\Agent;
+use App\Models\Office;
 use Illuminate\Http\RedirectResponse;
 
 class DashboardController extends Controller
@@ -22,6 +24,8 @@ class DashboardController extends Controller
         $stats = [
             'user_counter' => User::whereHas('role', fn ($q) => $q->where('name', '!=', 'admin'))->count(),
             'news_counter' => News::count(),
+            'office_counter' => Office::count(),
+            'agent_counter' => Agent::count(),
         ];
 
         $yearly_visitor_chart = array();

@@ -10,7 +10,7 @@
 
     <!-- Content Row -->
     <div class="row">
-        <!-- Product Counter Card -->
+        <!-- User Counter Card -->
         <div class="col-xl-3 col-md-6 mb-4">
             <div class="card border-left-primary shadow h-100 py-2">
                 <div class="card-body">
@@ -19,7 +19,7 @@
                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                                 Total User</div>
                             <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                <a href="#">{{ $stats['user_counter'] }}</a>
+                                <a href="{{ route('admin.ua.user.index') }}">{{ $stats['user_counter'] }}</a>
                             </div>
                         </div>
                         <div class="col-auto">
@@ -30,7 +30,7 @@
             </div>
         </div>
 
-        <!-- Portfolio Counter Card -->
+        <!-- News Counter Card -->
         <div class="col-xl-3 col-md-6 mb-4">
             <div class="card border-left-success shadow h-100 py-2">
                 <div class="card-body">
@@ -39,7 +39,7 @@
                             <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
                                 Total News</div>
                             <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                <a href="#">{{ $stats['news_counter'] }}</a>
+                                <a href="{{ route('admin.ua.news.index') }}">{{ $stats['news_counter'] }}</a>
                             </div>
                         </div>
                         <div class="col-auto">
@@ -50,33 +50,33 @@
             </div>
         </div>
 
-        <!-- Article Counter Card -->
-        {{-- <div class="col-xl-3 col-md-6 mb-4">
+        <!-- Office Counter Card -->
+        <div class="col-xl-3 col-md-6 mb-4">
             <div class="card border-left-info shadow h-100 py-2">
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
                             <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
-                                Total News
+                                Total Office
                             </div>
                             <div class="row no-gutters align-items-center">
                                 <div class="col-auto">
                                     <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">
-                                        <a href="#">0</a>
+                                        <a href="{{ route('admin.ua.office.index') }}">{{ $stats['office_counter'] }}</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-auto">
-                            <i class="fas fa-newspaper fa-2x text-gray-300"></i>
+                            <i class="fas fa-building fa-2x text-gray-300"></i>
                         </div>
                     </div>
                 </div>
             </div>
-        </div> --}}
+        </div>
 
-        <!-- Customer Counter Card -->
-        {{-- <div class="col-xl-3 col-md-6 mb-4">
+        <!-- Agent Counter Card -->
+        <div class="col-xl-3 col-md-6 mb-4">
             <div class="card border-left-warning shadow h-100 py-2">
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
@@ -84,7 +84,7 @@
                             <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
                                 Total Agents</div>
                             <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                <a href="#">0</a>
+                                <a href="{{ route('admin.ua.agent.index') }}">{{ $stats['agent_counter'] }}</a>
                             </div>
                         </div>
                         <div class="col-auto">
@@ -93,7 +93,7 @@
                     </div>
                 </div>
             </div>
-        </div> --}}
+        </div>
     </div>
 
     <!-- Content Row -->
