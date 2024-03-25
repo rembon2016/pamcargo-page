@@ -272,6 +272,14 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['auth']], 
                 ->name('index');
             Route::get('/create', [OfficeController::class, 'create'])
                 ->name('create');
+            Route::post('/store', [OfficeController::class, 'store'])
+                ->name('store');
+            Route::get('/{id}/edit', [OfficeController::class, 'edit'])
+                ->name('edit');
+            Route::put('/{id}/update', [OfficeController::class, 'update'])
+                ->name('update');
+            Route::delete('/{id}/delete', [OfficeController::class, 'delete'])
+                ->name('delete');
         });
 
         // Agent
@@ -304,7 +312,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['auth']], 
                 ->name('delete');
         });
 
-        // Continent
+        // Customer Message
         Route::group(['prefix' => 'customer-message', 'as' => 'customer_message.'], function () {
             Route::get('/', [CustomerMessageController::class, 'index'])
                 ->name('index');

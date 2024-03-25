@@ -25,26 +25,72 @@
                             <thead>
                                 <tr>
                                     <th>#</th>
-                                    <th>Col 1</th>
-                                    <th>Col 2</th>
+                                    <th>Office Name</th>
+                                    <th>Country</th>
+                                    <th>Continent</th>
+                                    <th>Image</th>
                                     <th>Actions?</th>
                                 </tr>
                             </thead>
                             <tfoot>
                                 <tr>
                                     <th>#</th>
-                                    <th>Col 1</th>
-                                    <th>Col 2</th>
+                                    <th>Office Name</th>
+                                    <th>Country</th>
+                                    <th>Continent</th>
+                                    <th>Image</th>
                                     <th>Actions?</th>
                                 </tr>
                             </tfoot>
                             <tbody>
-                                <tr>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                </tr>
+                                @foreach ($offices as $office)
+                                    <tr>
+                                        <td>{{ $loop->iteration }}</td>
+                                        <td>{{ $office->name }}</td>
+                                        <td>{{ $office->country->name }}</td>
+                                        <td>{{ $office->continent->region }}</td>
+                                        <td>
+                                            <!-- Button trigger Image -->
+                                            <button type="button" class="btn btn-primary btn-sm" data-toggle="modal"
+                                                data-target="#officeImage{{ $loop->index }}">
+                                                View Image
+                                            </button>
+
+                                            <!-- Show Detail Image -->
+                                            <div class="modal fade" id="officeImage{{ $loop->index }}" tabindex="-1"
+                                                aria-labelledby="officeImageLabel{{ $loop->index }}" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title"
+                                                                id="officeImageLabel{{ $loop->index }}">
+                                                                {{ $office->name.' - Image' }}</h5>
+                                                            <button type="button" class="close" data-dismiss="modal"
+                                                                aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <img src="{{ $office->image_url }}" class="img-thumbnail"
+                                                                alt="{{ $office->name.' - Image' }}"
+                                                                style="width: 100%; height: 300px;" />
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary"
+                                                                data-dismiss="modal">Close</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a href="{{ route('admin.ua.office.edit', $office->id) }}" class="btn btn-success btn-sm">
+                                                <i class="fa fa-edit"></i>
+                                            </a>
+                                            <x-delete-btn :url="route('admin.ua.office.delete', $office->id)" />
+                                        </td>
+                                    </tr>
+                                @endforeach
                             </tbody>
                         </table>
                     </div>
