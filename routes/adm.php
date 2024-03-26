@@ -324,6 +324,12 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['auth']], 
         Route::group(['prefix' => 'customer-message', 'as' => 'customer_message.'], function () {
             Route::get('/', [CustomerMessageController::class, 'index'])
                 ->name('index');
+            Route::get('/{id}', [CustomerMessageController::class, 'show'])
+                ->name('show');
+            Route::get('/{id}/read', [CustomerMessageController::class, 'read'])
+                ->name('read');
+            Route::delete('/{id}/delete', [CustomerMessageController::class, 'delete'])
+                ->name('delete');
         });
 
     });

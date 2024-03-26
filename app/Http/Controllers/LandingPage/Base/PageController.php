@@ -12,7 +12,10 @@ use Illuminate\Http\RedirectResponse;
 
 class PageController extends Controller
 {
-    public function home()
+    /**
+     * @return View
+     */
+    public function home(): View
     {
         $sliders = Slider::latest()->get();
         return view(
@@ -21,52 +24,82 @@ class PageController extends Controller
         );
     }
 
-    public function about()
+    /**
+     * @return View
+     */
+    public function about(): View
     {
         return view('landing-page.pages.about');
     }
 
-    public function seaAir()
+    /**
+     * @return View
+     */
+    public function seaAir(): View
     {
         return view('landing-page.pages.services.sea-air');
     }
 
-    public function landAir()
+    /**
+     * @return View
+     */
+    public function landAir(): View
     {
         return view('landing-page.pages.services.land-air');
     }
 
-    public function contact()
+    /**
+     * @return View
+     */
+    public function contact(): View
     {
         return view('landing-page.pages.contact');
     }
 
-    public function rateRequest()
+    /**
+     * @return View
+     */
+    public function rateRequest(): View
     {
         return view('landing-page.pages.rate-request');
     }
 
-    public function imprint()
+    /**
+     * @return View
+     */
+    public function imprint(): View
     {
         return view('landing-page.pages.imprint');
     }
 
-    public function faq()
+    /**
+     * @return View
+     */
+    public function faq(): View
     {
         return view('landing-page.pages.faq');
     }
 
-    public function privacyPolicy()
+    /**
+     * @return View
+     */
+    public function privacyPolicy(): View
     {
         return view('landing-page.pages.privacy-policy');
     }
 
-    public function news()
+    /**
+     * @return View
+     */
+    public function news(): View
     {
         return view('landing-page.pages.news.index');
     }
 
-    public function newsDetail()
+    /**
+     * @return View
+     */
+    public function newsDetail(): View
     {
         return view('landing-page.pages.news.detail');
     }

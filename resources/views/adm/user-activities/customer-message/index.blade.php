@@ -25,26 +25,50 @@
                             <thead>
                                 <tr>
                                     <th>#</th>
-                                    <th>Col 1</th>
-                                    <th>Col 2</th>
+                                    <th>Firstname</th>
+                                    <th>Lastname</th>
+                                    <th>Email</th>
+                                    <th>Is Read?</th>
                                     <th>Actions?</th>
                                 </tr>
                             </thead>
                             <tfoot>
                                 <tr>
                                     <th>#</th>
-                                    <th>Col 1</th>
-                                    <th>Col 2</th>
+                                    <th>Firstname</th>
+                                    <th>Lastname</th>
+                                    <th>Email</th>
+                                    <th>Is Read?</th>
                                     <th>Actions?</th>
                                 </tr>
                             </tfoot>
                             <tbody>
-                                <tr>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                </tr>
+                                @foreach($customerMessages as $customerMessage)
+                                    <tr>
+                                        <td>{{ $loop->iteration }}</td>
+                                        <td>{{ $customerMessage->firstname }}</td>
+                                        <td>{{ $customerMessage->lastname }}</td>
+                                        <td>{{ $customerMessage->email }}</td>
+                                        <td>
+                                            @if($customerMessage->is_read)
+                                                <span class="badge badge-success">Has been read</span>
+                                            @else
+                                                <span class="badge badge-warning">Unread</span>
+                                            @endif
+                                        </td>
+                                        <td>
+                                            @if (!$customerMessage->is_read)
+                                                <a class="btn btn-success btn-sm" href="{{ route('admin.ua.customer_message.read', $customerMessage->id) }}">
+                                                    <i class="fa fa-book-reader"></i>
+                                                </a>
+                                            @endif
+                                            <a class="btn btn-primary btn-sm" href="{{ route('admin.ua.customer_message.show', $customerMessage->id) }}">
+                                                <i class="fa fa-eye"></i>
+                                            </a>
+                                            <x-delete-btn :url="route('admin.ua.customer_message.delete', $customerMessage->id)" />
+                                        </td>
+                                    </tr>
+                                @endforeach
                             </tbody>
                         </table>
                     </div>
