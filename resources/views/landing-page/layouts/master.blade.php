@@ -69,7 +69,7 @@
 </div>
 <!-- LOADING AREA  END ====== -->
 
-	<div class="page-wraper">
+	<div class="page-wraper gtranslate_wrapper">
       
         <!-- CONTENT START -->
         @yield('content')
@@ -99,6 +99,8 @@
 <script src="@assets('js/jquery.bgscroll.js')"></script><!-- BACKGROUND SCROLL -->
 <script src="@assets('js/custom.js')"></script><!-- CUSTOM FUCTIONS  -->
 <script src="@assets('js/main.js')"></script><!-- CUSTOM FUCTIONS  -->
+<script>window.gtranslateSettings = {"default_language":"en","wrapper_selector":".gtranslate_wrapper","switcher_horizontal_position":"right"}</script>
+<script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
 
 <!-- REVOLUTION JS FILES -->
 {{-- 
