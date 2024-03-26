@@ -1,9 +1,13 @@
 @extends('landing-page.layouts.master')
 
 @section('content')
-    <!-- HEADER START -->
+    {{-- <!-- HEADER START -->
     @include('landing-page.components.header')
-    <!-- HEADER END -->
+    <!-- HEADER END --> --}}
+
+    <!-- SIMPLE HEADER START -->
+    @include('landing-page.components.simple-header')
+    <!-- SIMPLE HEADER END -->
 
     @yield('page-content')
 

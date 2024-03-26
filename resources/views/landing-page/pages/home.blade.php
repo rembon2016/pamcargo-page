@@ -160,7 +160,7 @@
                                 <div class="h-banner-left">
                                     <div class="h-bnr-top">
                                         <h2>
-                                            <span class="title-outline">Slider 1</span>
+                                            <span class="title-outline">Slider 1 <span class="notranslate">Agung</span></span>
                                         </h2>
                                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, sequi!</p>
                                         <a href="{{ route('sea-air') }}" class="h-bnr-btn">View Services</a>

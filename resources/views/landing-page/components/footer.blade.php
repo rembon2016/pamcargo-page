@@ -32,7 +32,7 @@
                             <h3 class="widget-title">Quick Links</h3>
                             <ul>
                                 <li><a href="{{ route('about') }}">About</a></li>
-                                <li><a href="{{ route('about') }}">Offices</a></li>
+                                <li><a href="{{ route('office') }}">Offices</a></li>
                                 <li><a href="{{ route('news.index') }}">News</a></li>
                                 <li><a href="{{ route('imprint') }}">Imprint</a></li>
                                 <li><a href="{{ route('contact') }}">Contact</a></li>
